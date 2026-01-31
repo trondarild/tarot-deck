@@ -1,0 +1,38 @@
+<!ELEMENT metadata (card+)>
+<!ATTLIST metadata deck CDATA #REQUIRED>
+
+<!ELEMENT card (core, tarot?, playing?, oracle?, custom?)>
+<!ATTLIST card id CDATA #REQUIRED>
+
+<!ELEMENT core (displayNumber, sortOrder)>
+<!ELEMENT displayNumber (#PCDATA)>
+<!ELEMENT sortOrder (#PCDATA)>
+
+<!ELEMENT tarot (arcana, hebrew?, astrology?, kabbalah?)>
+<!ELEMENT arcana (#PCDATA)>
+<!ELEMENT hebrew (#PCDATA)>
+<!ELEMENT astrology (sign?, element?)>
+<!ELEMENT sign (#PCDATA)>
+<!ELEMENT element (#PCDATA)>
+<!ELEMENT kabbalah (path?, sephiroth?)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT sephiroth EMPTY>
+<!ATTLIST sephiroth
+  from CDATA #IMPLIED
+  to CDATA #IMPLIED>
+
+<!ELEMENT playing (suit, rank, value?, faceCard?)>
+<!ELEMENT suit (#PCDATA)>
+<!ELEMENT rank (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT faceCard (#PCDATA)>
+
+<!ELEMENT oracle (number, symbol?)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT symbol (#PCDATA)>
+
+<!ELEMENT custom (attribute*)>
+<!ELEMENT attribute EMPTY>
+<!ATTLIST attribute
+  name CDATA #REQUIRED
+  value CDATA #REQUIRED>

@@ -1,0 +1,27 @@
+<!ELEMENT decks (deck+)>
+
+<!ELEMENT deck (name, description?, created?, cardCount, structure, metadata, locales, images?)>
+<!ATTLIST deck
+  id ID #REQUIRED
+  type (tarot|playing-cards|oracle) #REQUIRED
+  version CDATA #IMPLIED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT created (#PCDATA)>
+<!ELEMENT cardCount (#PCDATA)>
+
+<!ELEMENT structure EMPTY>
+<!ATTLIST structure href CDATA #REQUIRED>
+
+<!ELEMENT metadata EMPTY>
+<!ATTLIST metadata href CDATA #REQUIRED>
+
+<!ELEMENT locales (locale+)>
+<!ELEMENT locale EMPTY>
+<!ATTLIST locale
+  lang CDATA #REQUIRED
+  href CDATA #REQUIRED>
+
+<!ELEMENT images EMPTY>
+<!ATTLIST images basePath CDATA #REQUIRED>

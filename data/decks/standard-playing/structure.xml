@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE structure SYSTEM "../../schemas/structure.dtd">
+<structure deck="standard-playing">
+  <hierarchy>
+    <level name="suit" label="Suit"/>
+  </hierarchy>
+
+  <group type="suit" value="hearts" label="Hearts" count="13">
+    <card id="h01" order="1"/>
+    <card id="h02" order="2"/>
+    <card id="h03" order="3"/>
+    <card id="h04" order="4"/>
+    <card id="h05" order="5"/>
+    <card id="h06" order="6"/>
+    <card id="h07" order="7"/>
+    <card id="h08" order="8"/>
+    <card id="h09" order="9"/>
+    <card id="h10" order="10"/>
+    <card id="h11" order="11"/>
+    <card id="h12" order="12"/>
+    <card id="h13" order="13"/>
+  </group>
+
+  <group type="suit" value="diamonds" label="Diamonds" count="13">
+    <card id="d01" order="1"/>
+    <card id="d02" order="2"/>
+    <card id="d03" order="3"/>
+    <card id="d04" order="4"/>
+    <card id="d05" order="5"/>
+    <card id="d06" order="6"/>
+    <card id="d07" order="7"/>
+    <card id="d08" order="8"/>
+    <card id="d09" order="9"/>
+    <card id="d10" order="10"/>
+    <card id="d11" order="11"/>
+    <card id="d12" order="12"/>
+    <card id="d13" order="13"/>
+  </group>
+
+  <group type="suit" value="clubs" label="Clubs" count="13">
+    <card id="c01" order="1"/>
+    <card id="c02" order="2"/>
+    <card id="c03" order="3"/>
+    <card id="c04" order="4"/>
+    <card id="c05" order="5"/>
+    <card id="c06" order="6"/>
+    <card id="c07" order="7"/>
+    <card id="c08" order="8"/>
+    <card id="c09" order="9"/>
+    <card id="c10" order="10"/>
+    <card id="c11" order="11"/>
+    <card id="c12" order="12"/>
+    <card id="c13" order="13"/>
+  </group>
+
+  <group type="suit" value="spades" label="Spades" count="13">
+    <card id="s01" order="1"/>
+    <card id="s02" order="2"/>
+    <card id="s03" order="3"/>
+    <card id="s04" order="4"/>
+    <card id="s05" order="5"/>
+    <card id="s06" order="6"/>
+    <card id="s07" order="7"/>
+    <card id="s08" order="8"/>
+    <card id="s09" order="9"/>
+    <card id="s10" order="10"/>
+    <card id="s11" order="11"/>
+    <card id="s12" order="12"/>
+    <card id="s13" order="13"/>
+  </group>
+</structure>

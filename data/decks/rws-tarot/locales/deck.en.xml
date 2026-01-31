@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<locale lang="en">
+<!DOCTYPE locale SYSTEM "../../../schemas/locale.dtd">
+<locale lang="en" deck="rws-tarot">
   <!-- Major Arcana -->
   <card id="00"><title>The Fool</title><description><p>Beginnings, innocence, potential.</p></description></card>
   <card id="01"><title>The Magician</title><description><p>Manifestation, resourcefulness, power.</p></description></card>

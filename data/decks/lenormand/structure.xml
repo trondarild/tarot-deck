@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE structure SYSTEM "../../schemas/structure.dtd">
+<structure deck="lenormand">
+  <group type="deck" value="main" label="Lenormand Cards" count="36">
+    <card id="01" order="1"/>
+    <card id="02" order="2"/>
+    <card id="03" order="3"/>
+    <card id="04" order="4"/>
+    <card id="05" order="5"/>
+    <card id="06" order="6"/>
+    <card id="07" order="7"/>
+    <card id="08" order="8"/>
+    <card id="09" order="9"/>
+    <card id="10" order="10"/>
+    <card id="11" order="11"/>
+    <card id="12" order="12"/>
+    <card id="13" order="13"/>
+    <card id="14" order="14"/>
+    <card id="15" order="15"/>
+    <card id="16" order="16"/>
+    <card id="17" order="17"/>
+    <card id="18" order="18"/>
+    <card id="19" order="19"/>
+    <card id="20" order="20"/>
+    <card id="21" order="21"/>
+    <card id="22" order="22"/>
+    <card id="23" order="23"/>
+    <card id="24" order="24"/>
+    <card id="25" order="25"/>
+    <card id="26" order="26"/>
+    <card id="27" order="27"/>
+    <card id="28" order="28"/>
+    <card id="29" order="29"/>
+    <card id="30" order="30"/>
+    <card id="31" order="31"/>
+    <card id="32" order="32"/>
+    <card id="33" order="33"/>
+    <card id="34" order="34"/>
+    <card id="35" order="35"/>
+    <card id="36" order="36"/>
+  </group>
+</structure>

@@ -15,6 +15,14 @@ function setLanguage(lang) {
   }
 }
 
+function setDeck(id) {
+  // Use URL search params as a simple way to pass activeDeckId to XSLT (if supported by processor)
+  // or handle via URL fragments. For now, we'll use search params.
+  const url = new URL(window.location.href);
+  url.searchParams.set('deck', id);
+  window.location.href = url.toString();
+}
+
 function initUI() {
   const cards = document.querySelectorAll('.tarot-card');
   console.log(`[Tarot] Found ${cards.length} cards`);
@@ -68,7 +76,7 @@ function showCardDetails(cid) {
                     <h2 style="font-size: 2.8rem; margin: 0; text-transform: uppercase;">${getVal('.card-title')}</h2>
                     <span class="sign-symbol" style="font-size: 3rem; color: #bf616a;">${getVal('.sign-symbol') || getVal('.tag-mini-suit')}</span>
                 </div>
-                <div class="full-description" style="font-size: 1.15rem; line-height: 1.7;">${card.querySelector('.card-description').innerHTML}</div>
+                <div class="full-description" style="font-size: 1.15rem; line-height: 1.7;">${card.querySelector('.card-description')?.innerHTML || 'No description available.'}</div>
             </div>
         </div>
     `;

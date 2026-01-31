@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metadata SYSTEM "../../schemas/metadata.dtd">
+<metadata deck="standard-playing">
+  <card id="h01"><core><displayNumber>A</displayNumber><sortOrder>1</sortOrder></core><playing><suit>hearts</suit><rank>ace</rank><value>1</value><faceCard>false</faceCard></playing></card>
+  <card id="h11"><core><displayNumber>J</displayNumber><sortOrder>11</sortOrder></core><playing><suit>hearts</suit><rank>jack</rank><value>10</value><faceCard>true</faceCard></playing></card>
+  <card id="h12"><core><displayNumber>Q</displayNumber><sortOrder>12</sortOrder></core><playing><suit>hearts</suit><rank>queen</rank><value>10</value><faceCard>true</faceCard></playing></card>
+  <card id="h13"><core><displayNumber>K</displayNumber><sortOrder>13</sortOrder></core><playing><suit>hearts</suit><rank>king</rank><value>10</value><faceCard>true</faceCard></playing></card>
+</metadata>

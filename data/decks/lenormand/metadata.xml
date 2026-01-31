@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metadata SYSTEM "../../schemas/metadata.dtd">
+<metadata deck="lenormand">
+  <card id="01"><core><displayNumber>1</displayNumber><sortOrder>1</sortOrder></core><oracle><number>1</number><symbol>🚴</symbol></oracle></card>
+  <card id="02"><core><displayNumber>2</displayNumber><sortOrder>2</sortOrder></core><oracle><number>2</number><symbol>🍀</symbol></oracle></card>
+  <card id="03"><core><displayNumber>3</displayNumber><sortOrder>3</sortOrder></core><oracle><number>3</number><symbol>🚢</symbol></oracle></card>
+</metadata>

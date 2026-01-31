@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE decks SYSTEM "schemas/decks.dtd">
+<decks>
+  <deck id="rws-tarot" type="tarot" version="1.0">
+    <name>Rider-Waite-Smith Tarot</name>
+    <description>Classic tarot deck by A.E. Waite and Pamela Colman Smith</description>
+    <created>1909</created>
+    <cardCount>78</cardCount>
+    <structure href="decks/rws-tarot/structure.xml"/>
+    <metadata href="decks/rws-tarot/metadata.xml"/>
+    <locales>
+      <locale lang="en" href="decks/rws-tarot/locales/deck.en.xml"/>
+      <locale lang="uk" href="decks/rws-tarot/locales/deck.uk.xml"/>
+    </locales>
+    <images basePath="assets/img/big/"/>
+  </deck>
+
+  <deck id="standard-playing" type="playing-cards" version="1.0">
+    <name>Standard Playing Cards</name>
+    <description>52-card French-suited deck</description>
+    <cardCount>52</cardCount>
+    <structure href="decks/standard-playing/structure.xml"/>
+    <metadata href="decks/standard-playing/metadata.xml"/>
+    <locales>
+      <locale lang="en" href="decks/standard-playing/locales/deck.en.xml"/>
+    </locales>
+    <images basePath="assets/img/playing/"/>
+  </deck>
+
+  <deck id="lenormand" type="oracle" version="1.0">
+    <name>Lenormand Oracle</name>
+    <description>36-card fortune-telling deck</description>
+    <cardCount>36</cardCount>
+    <structure href="decks/lenormand/structure.xml"/>
+    <metadata href="decks/lenormand/metadata.xml"/>
+    <locales>
+      <locale lang="en" href="decks/lenormand/locales/deck.en.xml"/>
+    </locales>
+    <images basePath="assets/img/lenormand/"/>
+  </deck>
+</decks>

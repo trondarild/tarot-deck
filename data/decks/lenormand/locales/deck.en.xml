@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../schemas/locale.dtd">
+<locale lang="en" deck="lenormand">
+  <card id="01"><title>Rider</title><description><p>News, messages, movement, speed.</p></description></card>
+  <card id="02"><title>Clover</title><description><p>Luck, lightheartedness, brief happiness.</p></description></card>
+  <card id="03"><title>Ship</title><description><p>Travel, transitions, distance.</p></description></card>
+</locale>

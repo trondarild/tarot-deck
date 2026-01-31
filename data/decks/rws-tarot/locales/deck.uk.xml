@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<locale lang="uk">
+<!DOCTYPE locale SYSTEM "../../../schemas/locale.dtd">
+<locale lang="uk" deck="rws-tarot">
   <!-- Major Arcana -->
   <card id="00"><title>Блазень</title><description><p>Початок шляху, невинність, потенціал.</p></description></card>
   <card id="01"><title>Маг</title><description><p>Майстерність, ініціатива, свідомість.</p></description></card>

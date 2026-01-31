@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metadata SYSTEM "../../schemas/metadata.dtd">
+<metadata deck="rws-tarot">
+  <card id="00">
+    <core><displayNumber>0</displayNumber><sortOrder>1</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>א</hebrew><astrology><sign>🜁</sign></astrology></tarot>
+  </card>
+  <card id="01">
+    <core><displayNumber>I</displayNumber><sortOrder>2</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ב</hebrew><astrology><sign>☿</sign></astrology></tarot>
+  </card>
+  <card id="02">
+    <core><displayNumber>II</displayNumber><sortOrder>3</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ג</hebrew><astrology><sign>☽</sign></astrology></tarot>
+  </card>
+  <card id="03">
+    <core><displayNumber>III</displayNumber><sortOrder>4</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>д</hebrew><astrology><sign>♀</sign></astrology></tarot>
+  </card>
+  <card id="04">
+    <core><displayNumber>IV</displayNumber><sortOrder>5</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ה</hebrew><astrology><sign>♈️</sign></astrology></tarot>
+  </card>
+  <card id="05">
+    <core><displayNumber>V</displayNumber><sortOrder>6</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ו</hebrew><astrology><sign>♉</sign></astrology></tarot>
+  </card>
+  <card id="06">
+    <core><displayNumber>VI</displayNumber><sortOrder>7</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ז</hebrew><astrology><sign> Gemini </sign></astrology></tarot>
+  </card>
+  <card id="07">
+    <core><displayNumber>VII</displayNumber><sortOrder>8</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ח</hebrew><astrology><sign>♋</sign></astrology></tarot>
+  </card>
+  <card id="08">
+    <core><displayNumber>VIII</displayNumber><sortOrder>9</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ט</hebrew><astrology><sign>♌</sign></astrology></tarot>
+  </card>
+  <card id="09">
+    <core><displayNumber>IX</displayNumber><sortOrder>10</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>י</hebrew><astrology><sign>♍</sign></astrology></tarot>
+  </card>
+  <card id="10">
+    <core><displayNumber>X</displayNumber><sortOrder>11</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>כ</hebrew><astrology><sign>♃</sign></astrology></tarot>
+  </card>
+  <card id="11">
+    <core><displayNumber>XI</displayNumber><sortOrder>12</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ל</hebrew><astrology><sign>♎</sign></astrology></tarot>
+  </card>
+  <card id="12">
+    <core><displayNumber>XII</displayNumber><sortOrder>13</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>מ</hebrew><astrology><sign>🜄</sign></astrology></tarot>
+  </card>
+  <card id="13">
+    <core><displayNumber>XIII</displayNumber><sortOrder>14</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>נ</hebrew><astrology><sign>♏</sign></astrology></tarot>
+  </card>
+  <card id="14">
+    <core><displayNumber>XIV</displayNumber><sortOrder>15</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ס</hebrew><astrology><sign>♐</sign></astrology></tarot>
+  </card>
+  <card id="15">
+    <core><displayNumber>XV</displayNumber><sortOrder>16</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ע</hebrew><astrology><sign>♑</sign></astrology></tarot>
+  </card>
+  <card id="16">
+    <core><displayNumber>XVI</displayNumber><sortOrder>17</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>פ</hebrew><astrology><sign>♂</sign></astrology></tarot>
+  </card>
+  <card id="17">
+    <core><displayNumber>XVII</displayNumber><sortOrder>18</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>צ</hebrew><astrology><sign>♒</sign></astrology></tarot>
+  </card>
+  <card id="18">
+    <core><displayNumber>XVIII</displayNumber><sortOrder>19</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ק</hebrew><astrology><sign>♓</sign></astrology></tarot>
+  </card>
+  <card id="19">
+    <core><displayNumber>XIX</displayNumber><sortOrder>20</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ר</hebrew><astrology><sign>☉</sign></astrology></tarot>
+  </card>
+  <card id="20">
+    <core><displayNumber>XX</displayNumber><sortOrder>21</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ש</hebrew><astrology><sign>🜂</sign></astrology></tarot>
+  </card>
+  <card id="21">
+    <core><displayNumber>XXI</displayNumber><sortOrder>22</sortOrder></core>
+    <tarot><arcana>major</arcana><hebrew>ת</hebrew><astrology><sign>♄</sign></astrology></tarot>
+  </card>
+
+  <!-- Minor Arcana - Wands -->
+  <card id="w01"><core><displayNumber>Ace</displayNumber><sortOrder>23</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w02"><core><displayNumber>2</displayNumber><sortOrder>24</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w03"><core><displayNumber>3</displayNumber><sortOrder>25</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w04"><core><displayNumber>4</displayNumber><sortOrder>26</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w05"><core><displayNumber>5</displayNumber><sortOrder>27</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w06"><core><displayNumber>6</displayNumber><sortOrder>28</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w07"><core><displayNumber>7</displayNumber><sortOrder>29</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w08"><core><displayNumber>8</displayNumber><sortOrder>30</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w09"><core><displayNumber>9</displayNumber><sortOrder>31</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w10"><core><displayNumber>10</displayNumber><sortOrder>32</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w11"><core><displayNumber>Page</displayNumber><sortOrder>33</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w12"><core><displayNumber>Knight</displayNumber><sortOrder>34</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w13"><core><displayNumber>Queen</displayNumber><sortOrder>35</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="w14"><core><displayNumber>King</displayNumber><sortOrder>36</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+
+  <!-- Minor Arcana - Cups -->
+  <card id="c01"><core><displayNumber>Ace</displayNumber><sortOrder>37</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c02"><core><displayNumber>2</displayNumber><sortOrder>38</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c03"><core><displayNumber>3</displayNumber><sortOrder>39</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c04"><core><displayNumber>4</displayNumber><sortOrder>40</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c05"><core><displayNumber>5</displayNumber><sortOrder>41</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c06"><core><displayNumber>6</displayNumber><sortOrder>42</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c07"><core><displayNumber>7</displayNumber><sortOrder>43</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c08"><core><displayNumber>8</displayNumber><sortOrder>44</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c09"><core><displayNumber>9</displayNumber><sortOrder>45</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c10"><core><displayNumber>10</displayNumber><sortOrder>46</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c11"><core><displayNumber>Page</displayNumber><sortOrder>47</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c12"><core><displayNumber>Knight</displayNumber><sortOrder>48</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c13"><core><displayNumber>Queen</displayNumber><sortOrder>49</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="c14"><core><displayNumber>King</displayNumber><sortOrder>50</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+
+  <!-- Minor Arcana - Swords -->
+  <card id="s01"><core><displayNumber>Ace</displayNumber><sortOrder>51</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s02"><core><displayNumber>2</displayNumber><sortOrder>52</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s03"><core><displayNumber>3</displayNumber><sortOrder>53</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s04"><core><displayNumber>4</displayNumber><sortOrder>54</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s05"><core><displayNumber>5</displayNumber><sortOrder>55</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s06"><core><displayNumber>6</displayNumber><sortOrder>56</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s07"><core><displayNumber>7</displayNumber><sortOrder>57</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s08"><core><displayNumber>8</displayNumber><sortOrder>58</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s09"><core><displayNumber>9</displayNumber><sortOrder>59</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s10"><core><displayNumber>10</displayNumber><sortOrder>60</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s11"><core><displayNumber>Page</displayNumber><sortOrder>61</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s12"><core><displayNumber>Knight</displayNumber><sortOrder>62</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s13"><core><displayNumber>Queen</displayNumber><sortOrder>63</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s14"><core><displayNumber>King</displayNumber><sortOrder>64</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+
+  <!-- Minor Arcana - Pentacles -->
+  <card id="p01"><core><displayNumber>Ace</displayNumber><sortOrder>65</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p02"><core><displayNumber>2</displayNumber><sortOrder>66</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p03"><core><displayNumber>3</displayNumber><sortOrder>67</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p04"><core><displayNumber>4</displayNumber><sortOrder>68</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p05"><core><displayNumber>5</displayNumber><sortOrder>69</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p06"><core><displayNumber>6</displayNumber><sortOrder>70</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p07"><core><displayNumber>7</displayNumber><sortOrder>71</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p08"><core><displayNumber>8</displayNumber><sortOrder>72</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p09"><core><displayNumber>9</displayNumber><sortOrder>73</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p10"><core><displayNumber>10</displayNumber><sortOrder>74</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p11"><core><displayNumber>Page</displayNumber><sortOrder>75</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="s12"><core><displayNumber>Knight</displayNumber><sortOrder>76</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p13"><core><displayNumber>Queen</displayNumber><sortOrder>77</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+  <card id="p14"><core><displayNumber>King</displayNumber><sortOrder>78</sortOrder></core><tarot><arcana>minor</arcana></tarot></card>
+</metadata>

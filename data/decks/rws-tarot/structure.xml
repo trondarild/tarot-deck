@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE structure SYSTEM "../../schemas/structure.dtd">
+<structure deck="rws-tarot">
+  <hierarchy>
+    <level name="arcana" label="Arcana Type"/>
+    <level name="suit" label="Suit" optional="true"/>
+  </hierarchy>
+
+  <group type="arcana" value="major" label="Major Arcana" count="22">
+    <card id="00" order="1"/>
+    <card id="01" order="2"/>
+    <card id="02" order="3"/>
+    <card id="03" order="4"/>
+    <card id="04" order="5"/>
+    <card id="05" order="6"/>
+    <card id="06" order="7"/>
+    <card id="07" order="8"/>
+    <card id="08" order="9"/>
+    <card id="09" order="10"/>
+    <card id="10" order="11"/>
+    <card id="11" order="12"/>
+    <card id="12" order="13"/>
+    <card id="13" order="14"/>
+    <card id="14" order="15"/>
+    <card id="15" order="16"/>
+    <card id="16" order="17"/>
+    <card id="17" order="18"/>
+    <card id="18" order="19"/>
+    <card id="19" order="20"/>
+    <card id="20" order="21"/>
+    <card id="21" order="22"/>
+  </group>
+
+  <group type="arcana" value="minor" label="Minor Arcana" count="56">
+    <group type="suit" value="wands" label="Wands" count="14">
+      <card id="w01" order="1"/>
+      <card id="w02" order="2"/>
+      <card id="w03" order="3"/>
+      <card id="w04" order="4"/>
+      <card id="w05" order="5"/>
+      <card id="w06" order="6"/>
+      <card id="w07" order="7"/>
+      <card id="w08" order="8"/>
+      <card id="w09" order="9"/>
+      <card id="w10" order="10"/>
+      <card id="w11" order="11"/>
+      <card id="w12" order="12"/>
+      <card id="w13" order="13"/>
+      <card id="w14" order="14"/>
+    </group>
+
+    <group type="suit" value="cups" label="Cups" count="14">
+      <card id="c01" order="1"/>
+      <card id="c02" order="2"/>
+      <card id="c03" order="3"/>
+      <card id="c04" order="4"/>
+      <card id="c05" order="5"/>
+      <card id="c06" order="6"/>
+      <card id="c07" order="7"/>
+      <card id="c08" order="8"/>
+      <card id="c09" order="9"/>
+      <card id="c10" order="10"/>
+      <card id="c11" order="11"/>
+      <card id="c12" order="12"/>
+      <card id="c13" order="13"/>
+      <card id="c14" order="14"/>
+    </group>
+
+    <group type="suit" value="swords" label="Swords" count="14">
+      <card id="s01" order="1"/>
+      <card id="s02" order="2"/>
+      <card id="s03" order="3"/>
+      <card id="s04" order="4"/>
+      <card id="s05" order="5"/>
+      <card id="s06" order="6"/>
+      <card id="s07" order="7"/>
+      <card id="s08" order="8"/>
+      <card id="s09" order="9"/>
+      <card id="s10" order="10"/>
+      <card id="s11" order="11"/>
+      <card id="s12" order="12"/>
+      <card id="s13" order="13"/>
+      <card id="s14" order="14"/>
+    </group>
+
+    <group type="suit" value="pentacles" label="Pentacles" count="14">
+      <card id="p01" order="1"/>
+      <card id="p02" order="2"/>
+      <card id="p03" order="3"/>
+      <card id="p04" order="4"/>
+      <card id="p05" order="5"/>
+      <card id="p06" order="6"/>
+      <card id="p07" order="7"/>
+      <card id="p08" order="8"/>
+      <card id="p09" order="9"/>
+      <card id="p10" order="10"/>
+      <card id="p11" order="11"/>
+      <card id="p12" order="12"/>
+      <card id="p13" order="13"/>
+      <card id="p14" order="14"/>
+    </group>
+  </group>
+</structure>

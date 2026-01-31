@@ -1,0 +1,16 @@
+<!ELEMENT locale (card+)>
+<!ATTLIST locale
+  lang CDATA #REQUIRED
+  deck CDATA #REQUIRED>
+
+<!ELEMENT card (title, description?, keywords?, divinatory?)>
+<!ATTLIST card id CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (p+)>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT keywords (keyword+)>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT divinatory (upright?, reversed?)>
+<!ELEMENT upright (#PCDATA)>
+<!ELEMENT reversed (#PCDATA)>

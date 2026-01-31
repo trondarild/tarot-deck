@@ -1,0 +1,21 @@
+<!ELEMENT structure (hierarchy?, group+)>
+<!ATTLIST structure deck CDATA #REQUIRED>
+
+<!ELEMENT hierarchy (level+)>
+<!ELEMENT level EMPTY>
+<!ATTLIST level
+  name CDATA #REQUIRED
+  label CDATA #REQUIRED
+  optional (true|false) "false">
+
+<!ELEMENT group ((card | group)*)>
+<!ATTLIST group
+  type CDATA #REQUIRED
+  value CDATA #REQUIRED
+  label CDATA #IMPLIED
+  count CDATA #IMPLIED>
+
+<!ELEMENT card EMPTY>
+<!ATTLIST card
+  id CDATA #REQUIRED
+  order CDATA #IMPLIED>
