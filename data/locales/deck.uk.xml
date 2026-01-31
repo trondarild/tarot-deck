@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale lang="uk">
+  <!-- Major Arcana -->
+  <card id="00"><title>Блазень</title><description><p>Початок шляху, невинність, потенціал.</p></description></card>
+  <card id="01"><title>Маг</title><description><p>Майстерність, ініціатива, свідомість.</p></description></card>
+  <card id="02"><title>Верховна Жриця</title><description><p>Інтуїція, підсвідомість, таємниця.</p></description></card>
+  <card id="03"><title>Імператриця</title><description><p>Родючість, природа, достаток.</p></description></card>
+  <card id="04"><title>Імператор</title><description><p>Структура, влада, стабільність.</p></description></card>
+  <card id="05"><title>Ієрофант</title><description><p>Традиції, навчання, духовний авторитет.</p></description></card>
+  <card id="06"><title>Закохані</title><description><p>Вибір, союз, гармонія.</p></description></card>
+  <card id="07"><title>Колісниця</title><description><p>Контроль, воля, тріумф.</p></description></card>
+  <card id="08"><title>Сила</title><description><p>Мужність, м'яка сила, терпіння.</p></description></card>
+  <card id="09"><title>Самітник</title><description><p>Пошук істини, самотність, мудрість.</p></description></card>
+  <card id="10"><title>Колесо Фортуни</title><description><p>Цикли, доля, зміни.</p></description></card>
+  <card id="11"><title>Справедливість</title><description><p>Баланс, правда, закон.</p></description></card>
+  <card id="12"><title>Повішений</title><description><p>Жертва, зміна перспективи, пауза.</p></description></card>
+  <card id="13"><title>Смерть</title><description><p>Трансформація, кінець та початок.</p></description></card>
+  <card id="14"><title>Помірність</title><description><p>Гармонія, баланс, зцілення.</p></description></card>
+  <card id="15"><title>Диявол</title><description><p>Пристрасть, залежність, матеріалізм.</p></description></card>
+  <card id="16"><title>Вежа</title><description><p>Раптові зміни, руйнування ілюзій.</p></description></card>
+  <card id="17"><title>Зірка</title><description><p>Надія, натхнення, спокій.</p></description></card>
+  <card id="18"><title>Місяць</title><description><p>Мрії, ілюзії, інтуїція.</p></description></card>
+  <card id="19"><title>Сонце</title><description><p>Успіх, радість, життєва сила.</p></description></card>
+  <card id="20"><title>Суд</title><description><p>Відродження, заклик, прощення.</p></description></card>
+  <card id="21"><title>Світ</title><description><p>Завершення, інтеграція, подорож.</p></description></card>
+
+  <!-- Minor Arcana - Wands -->
+  <card id="w01"><title>Туз Жезлів</title></card>
+  <card id="w02"><title>Двійка Жезлів</title></card>
+  <card id="w03"><title>Трійка Жезлів</title></card>
+  <card id="w04"><title>Четвірка Жезлів</title></card>
+  <card id="w05"><title>П'ятірка Жезлів</title></card>
+  <card id="w06"><title>Шістка Жезлів</title></card>
+  <card id="w07"><title>Сімка Жезлів</title></card>
+  <card id="w08"><title>Вісімка Жезлів</title></card>
+  <card id="w09"><title>Дев'ятка Жезлів</title></card>
+  <card id="w10"><title>Десятка Жезлів</title></card>
+  <card id="w11"><title>Паж Жезлів</title></card>
+  <card id="w12"><title>Лицар Жезлів</title></card>
+  <card id="w13"><title>Королева Жезлів</title></card>
+  <card id="w14"><title>Король Жезлів</title></card>
+
+  <!-- Minor Arcana - Cups -->
+  <card id="c01"><title>Туз Кубків</title></card>
+  <card id="c02"><title>Двійка Кубків</title></card>
+  <card id="c03"><title>Трійка Кубків</title></card>
+  <card id="c04"><title>Четвірка Кубків</title></card>
+  <card id="c05"><title>П'ятірка Кубків</title></card>
+  <card id="c06"><title>Шістка Кубків</title></card>
+  <card id="c07"><title>Сімка Кубків</title></card>
+  <card id="c08"><title>Вісімка Кубків</title></card>
+  <card id="c09"><title>Дев'ятка Кубків</title></card>
+  <card id="c10"><title>Десятка Кубків</title></card>
+  <card id="c11"><title>Паж Кубків</title></card>
+  <card id="c12"><title>Лицар Кубків</title></card>
+  <card id="c13"><title>Королева Кубків</title></card>
+  <card id="c14"><title>Король Кубків</title></card>
+
+  <!-- Minor Arcana - Swords -->
+  <card id="s01"><title>Туз Мечів</title></card>
+  <card id="s02"><title>Двійка Мечів</title></card>
+  <card id="s03"><title>Трійка Мечів</title></card>
+  <card id="s04"><title>Четвірка Мечів</title></card>
+  <card id="s05"><title>П'ятірка Мечів</title></card>
+  <card id="s06"><title>Шістка Мечів</title></card>
+  <card id="s07"><title>Сімка Мечів</title></card>
+  <card id="s08"><title>Вісімка Мечів</title></card>
+  <card id="s09"><title>Дев'ятка Мечів</title></card>
+  <card id="s10"><title>Десятка Мечів</title></card>
+  <card id="s11"><title>Паж Мечів</title></card>
+  <card id="s12"><title>Лицар Мечів</title></card>
+  <card id="s13"><title>Королева Мечів</title></card>
+  <card id="s14"><title>Король Мечів</title></card>
+
+  <!-- Minor Arcana - Pentacles -->
+  <card id="p01"><title>Туз Пентаклів</title></card>
+  <card id="p02"><title>Двійка Пентаклів</title></card>
+  <card id="p03"><title>Трійка Пентаклів</title></card>
+  <card id="p04"><title>Четвірка Пентаклів</title></card>
+  <card id="p05"><title>П'ятірка Пентаклів</title></card>
+  <card id="p06"><title>Шістка Пентаклів</title></card>
+  <card id="p07"><title>Сімка Пентаклів</title></card>
+  <card id="p08"><title>Вісімка Пентаклів</title></card>
+  <card id="p09"><title>Дев'ятка Пентаклів</title></card>
+  <card id="p10"><title>Десятка Пентаклів</title></card>
+  <card id="p11"><title>Паж Пентаклів</title></card>
+  <card id="p12"><title>Лицар Пентаклів</title></card>
+  <card id="p13"><title>Королева Пентаклів</title></card>
+  <card id="p14"><title>Король Пентаклів</title></card>
+</locale>

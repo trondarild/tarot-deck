@@ -1,3 +1,19 @@
-# WIP
+# Environment
 .env
+
+# Temporary files
 tmp/
+
+# Node modules (if using npm tools)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

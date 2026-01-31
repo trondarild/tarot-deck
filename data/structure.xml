@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<structure>
+  <arcana type="major">
+    <card id="00" />
+    <card id="01" />
+    <card id="02" />
+    <card id="03" />
+    <card id="04" />
+    <card id="05" />
+    <card id="06" />
+    <card id="07" />
+    <card id="08" />
+    <card id="09" />
+    <card id="10" />
+    <card id="11" />
+    <card id="12" />
+    <card id="13" />
+    <card id="14" />
+    <card id="15" />
+    <card id="16" />
+    <card id="17" />
+    <card id="18" />
+    <card id="19" />
+    <card id="20" />
+    <card id="21" />
+  </arcana>
+  <arcana type="minor">
+    <suit type="wands">
+      <card id="w01" />
+      <card id="w02" />
+      <card id="w03" />
+      <card id="w04" />
+      <card id="w05" />
+      <card id="w06" />
+      <card id="w07" />
+      <card id="w08" />
+      <card id="w09" />
+      <card id="w10" />
+      <card id="w11" />
+      <card id="w12" />
+      <card id="w13" />
+      <card id="w14" />
+    </suit>
+    <suit type="cups">
+      <card id="c01" />
+      <card id="c02" />
+      <card id="c03" />
+      <card id="c04" />
+      <card id="c05" />
+      <card id="c06" />
+      <card id="c07" />
+      <card id="c08" />
+      <card id="c09" />
+      <card id="c10" />
+      <card id="c11" />
+      <card id="c12" />
+      <card id="c13" />
+      <card id="c14" />
+    </suit>
+    <suit type="swords">
+      <card id="s01" />
+      <card id="s02" />
+      <card id="s03" />
+      <card id="s04" />
+      <card id="s05" />
+      <card id="s06" />
+      <card id="s07" />
+      <card id="s08" />
+      <card id="s09" />
+      <card id="s10" />
+      <card id="s11" />
+      <card id="s12" />
+      <card id="s13" />
+      <card id="s14" />
+    </suit>
+    <suit type="pentacles">
+      <card id="p01" />
+      <card id="p02" />
+      <card id="p03" />
+      <card id="p04" />
+      <card id="p05" />
+      <card id="p06" />
+      <card id="p07" />
+      <card id="p08" />
+      <card id="p09" />
+      <card id="p10" />
+      <card id="p11" />
+      <card id="p12" />
+      <card id="p13" />
+      <card id="p14" />
+    </suit>
+  </arcana>
+</structure>

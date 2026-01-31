@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui>
+    <strings lang="en">
+        <title>Tarot Pictorial Key</title>
+        <nav>
+            <major>Major Arcana</major>
+            <minor>Minor Arcana</minor>
+        </nav>
+        <footer>© 2026 Tarot XML Project</footer>
+    </strings>
+    <strings lang="uk">
+        <title>Таро Ілюстрований Ключ</title>
+        <nav>
+            <major>Старші Аркани</major>
+            <minor>Молодші Аркани</minor>
+        </nav>
+        <footer>© 2026 Таро XML Проєкт</footer>
+    </strings>
+</ui>

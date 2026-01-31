@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale lang="en">
+  <!-- Major Arcana -->
+  <card id="00"><title>The Fool</title><description><p>Beginnings, innocence, potential.</p></description></card>
+  <card id="01"><title>The Magician</title><description><p>Manifestation, resourcefulness, power.</p></description></card>
+  <card id="02"><title>The High Priestess</title><description><p>Intuition, sacred knowledge, divine feminine.</p></description></card>
+  <card id="03"><title>The Empress</title><description><p>Femininity, beauty, nature, abundance.</p></description></card>
+  <card id="04"><title>The Emperor</title><description><p>Authority, establishment, structure, father figure.</p></description></card>
+  <card id="05"><title>The Hierophant</title><description><p>Spiritual wisdom, religious beliefs, tradition.</p></description></card>
+  <card id="06"><title>The Lovers</title><description><p>Love, harmony, relationships, choices.</p></description></card>
+  <card id="07"><title>The Chariot</title><description><p>Control, willpower, success, determination.</p></description></card>
+  <card id="08"><title>Strength</title><description><p>Strength, courage, persuasion, influence.</p></description></card>
+  <card id="09"><title>The Hermit</title><description><p>Soul-searching, introspection, being alone.</p></description></card>
+  <card id="10"><title>Wheel of Fortune</title><description><p>Good luck, karma, life cycles, destiny.</p></description></card>
+  <card id="11"><title>Justice</title><description><p>Justice, fairness, truth, cause and effect.</p></description></card>
+  <card id="12"><title>The Hanged Man</title><description><p>Pause, surrender, letting go, new perspectives.</p></description></card>
+  <card id="13"><title>Death</title><description><p>Endings, change, transformation, transition.</p></description></card>
+  <card id="14"><title>Temperance</title><description><p>Balance, moderation, patience, purpose.</p></description></card>
+  <card id="15"><title>The Devil</title><description><p>Shadow self, attachment, addiction, restriction.</p></description></card>
+  <card id="16"><title>The Tower</title><description><p>Sudden change, upheaval, chaos, revelation.</p></description></card>
+  <card id="17"><title>The Star</title><description><p>Hope, faith, purpose, renewal, spirituality.</p></description></card>
+  <card id="18"><title>The Moon</title><description><p>Illusion, fear, anxiety, subconscious, intuition.</p></description></card>
+  <card id="19"><title>The Sun</title><description><p>Positivity, fun, warmth, success, vitality.</p></description></card>
+  <card id="20"><title>Judgement</title><description><p>Judgement, rebirth, inner calling, absolution.</p></description></card>
+  <card id="21"><title>The World</title><description><p>Completion, integration, accomplishment, travel.</p></description></card>
+
+  <!-- Minor Arcana - Wands -->
+  <card id="w01"><title>Ace of Wands</title></card>
+  <card id="w02"><title>Two of Wands</title></card>
+  <card id="w03"><title>Three of Wands</title></card>
+  <card id="w04"><title>Four of Wands</title></card>
+  <card id="w05"><title>Five of Wands</title></card>
+  <card id="w06"><title>Six of Wands</title></card>
+  <card id="w07"><title>Seven of Wands</title></card>
+  <card id="w08"><title>Eight of Wands</title></card>
+  <card id="w09"><title>Nine of Wands</title></card>
+  <card id="w10"><title>Ten of Wands</title></card>
+  <card id="w11"><title>Page of Wands</title></card>
+  <card id="w12"><title>Knight of Wands</title></card>
+  <card id="w13"><title>Queen of Wands</title></card>
+  <card id="w14"><title>King of Wands</title></card>
+
+  <!-- Minor Arcana - Cups -->
+  <card id="c01"><title>Ace of Cups</title></card>
+  <card id="c02"><title>Two of Cups</title></card>
+  <card id="c03"><title>Three of Cups</title></card>
+  <card id="c04"><title>Four of Cups</title></card>
+  <card id="c05"><title>Five of Cups</title></card>
+  <card id="c06"><title>Six of Cups</title></card>
+  <card id="c07"><title>Seven of Cups</title></card>
+  <card id="c08"><title>Eight of Cups</title></card>
+  <card id="c09"><title>Nine of Cups</title></card>
+  <card id="c10"><title>Ten of Cups</title></card>
+  <card id="c11"><title>Page of Cups</title></card>
+  <card id="c12"><title>Knight of Cups</title></card>
+  <card id="c13"><title>Queen of Cups</title></card>
+  <card id="c14"><title>King of Cups</title></card>
+
+  <!-- Minor Arcana - Swords -->
+  <card id="s01"><title>Ace of Swords</title></card>
+  <card id="s02"><title>Two of Swords</title></card>
+  <card id="s03"><title>Three of Swords</title></card>
+  <card id="s04"><title>Four of Swords</title></card>
+  <card id="s05"><title>Five of Swords</title></card>
+  <card id="s06"><title>Six of Swords</title></card>
+  <card id="s07"><title>Seven of Swords</title></card>
+  <card id="s08"><title>Eight of Swords</title></card>
+  <card id="s09"><title>Nine of Swords</title></card>
+  <card id="s10"><title>Ten of Swords</title></card>
+  <card id="s11"><title>Page of Swords</title></card>
+  <card id="s12"><title>Knight of Swords</title></card>
+  <card id="s13"><title>Queen of Swords</title></card>
+  <card id="s14"><title>King of Swords</title></card>
+
+  <!-- Minor Arcana - Pentacles -->
+  <card id="p01"><title>Ace of Pentacles</title></card>
+  <card id="p02"><title>Two of Pentacles</title></card>
+  <card id="p03"><title>Three of Pentacles</title></card>
+  <card id="p04"><title>Four of Pentacles</title></card>
+  <card id="p05"><title>Five of Pentacles</title></card>
+  <card id="p06"><title>Six of Pentacles</title></card>
+  <card id="p07"><title>Seven of Pentacles</title></card>
+  <card id="p08"><title>Eight of Pentacles</title></card>
+  <card id="p09"><title>Nine of Pentacles</title></card>
+  <card id="p10"><title>Ten of Pentacles</title></card>
+  <card id="p11"><title>Page of Pentacles</title></card>
+  <card id="p12"><title>Knight of Pentacles</title></card>
+  <card id="p13"><title>Queen of Pentacles</title></card>
+  <card id="p14"><title>King of Pentacles</title></card>
+</locale>
