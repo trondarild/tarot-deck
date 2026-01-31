@@ -263,7 +263,10 @@ The project currently implements:
 - Bilingual support (English and Ukrainian)
 - Native browser XSLT transformation
 - XML-based data architecture treating files as database tables
-- Minimal JavaScript for navigation and UI interactions
+- Minimal JavaScript for navigation and UI interactions only
+- Universal Card Deck Schema (Multi-deck architecture)
+- DTD-validated data structures
+- Generic XSLT rendering engine (`deck.xsl`)
 
 ## Planned Features
 
@@ -372,6 +375,15 @@ The project currently implements:
 - Include keywords and themes
 - Cross-reference related cards
 - Add historical notes and variations
+
+#### Universal Schema & Multi-Deck Support
+
+- [x] Implement Universal Card Deck Schema (v1.0)
+- [x] Migrate RWS Tarot to modular structure
+- [ ] Complete full card metadata and locales for `standard-playing` deck
+- [ ] Complete full card metadata and locales for `lenormand` deck
+- [ ] Implement client-side deck switcher using XSLT parameters
+- [ ] Support custom user-defined decks via local XML loading
 
 #### Multilingual Expansion
 
