@@ -17,3 +17,8 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Tool dependencies
+tools/node_modules/
+tools/package-lock.json
+__pycache__/

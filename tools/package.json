@@ -1,0 +1,8 @@
+{
+  "name": "tarot-deck-tools",
+  "private": true,
+  "description": "Renderer for code-drawn card art (svg_cards.py)",
+  "dependencies": {
+    "playwright-core": "1.47.2"
+  }
+}
