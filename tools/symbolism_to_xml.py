@@ -15,11 +15,16 @@ from pathlib import Path
 from xml.sax.saxutils import escape, quoteattr
 
 ROOT = Path(__file__).resolve().parent.parent
+# Deck -> symbolism files; a deck may draw on several (Zen: major and minor cards)
 SOURCES = {
-    "zen": "docs/zen-buddhism-symbolism.md",
-    "pessimistic": "docs/pessimistic-symbolism.md",
-    "rws-tarot": "docs/rws-tarot-symbolism.md",
+    "zen": ["docs/zen-buddhism-symbolism.md", "docs/zen-buddhism-minor-symbolism.md"],
+    "pessimistic": ["docs/pessimistic-symbolism.md"],
+    "rws-tarot": ["docs/rws-tarot-symbolism.md"],
 }
+
+# Decks whose cards without a <description> get one from the first sentence of
+# their "In a reading" section (the Zen minor cards are written that way)
+DERIVE_DESCRIPTION = {"zen"}
 ROMAN = ["0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
          "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"]
 
@@ -53,6 +58,11 @@ def parse(md, titles):
     return cards
 
 
+def first_sentence(text):
+    m = re.match(r"(.+?[.!?])(\s|$)", text)
+    return m.group(1) if m else text
+
+
 def symbolism_xml(sections):
     lines = ["    <symbolism>"]
     for label, text in sections:
@@ -62,11 +72,14 @@ def symbolism_xml(sections):
 
 
 def main():
-    for deck, src in SOURCES.items():
+    for deck, srcs in SOURCES.items():
         path = ROOT / "data" / "decks" / deck / "locales" / "deck.en.xml"
         xml = path.read_text()
         titles = {t: cid for cid, t in re.findall(r'<card id="([\w-]+)">\s*<title>([^<]+)</title>', xml)}
-        cards = parse((ROOT / src).read_text(), titles)
+        cards = {}
+        for src in srcs:
+            if (ROOT / src).exists():
+                cards.update(parse((ROOT / src).read_text(), titles))
         done = 0
 
         def replace(m):
@@ -76,6 +89,10 @@ def main():
             if cid not in cards:
                 return m.group(0)
             done += 1
+            if deck in DERIVE_DESCRIPTION and "<description>" not in inner:
+                reading = dict(cards[cid]).get("In a reading")
+                if reading:
+                    inner += f"<description><p>{inline(first_sentence(reading))}</p></description>"
             return f'<card id="{cid}">{inner}\n{symbolism_xml(cards[cid])}\n  </card>'
 
         xml = re.sub(r'<card id="([\w-]+)">(.*?)\s*</card>', replace, xml, flags=re.S)

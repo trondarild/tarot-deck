@@ -41,8 +41,8 @@
 
   <deck id="zen" type="tarot" version="1.0">
     <name>Zen Deck</name>
-    <description>Major series of 18 cards: Mu, Kuoan's ten ox-herding pictures and seven transmission scenes</description>
-    <cardCount>18</cardCount>
+    <description>18 major cards (Mu, Kuoan's ten ox-herding pictures, seven transmission scenes) and 75 minor cards in five suits of the elements, with Dongshan's Five Ranks as court cards</description>
+    <cardCount>93</cardCount>
     <structure href="decks/zen/structure.xml"/>
     <metadata href="decks/zen/metadata.xml"/>
     <locales>

@@ -3,6 +3,7 @@
 <structure deck="zen">
   <hierarchy>
     <level name="strand" label="Strand"/>
+    <level name="suit" label="Suit" optional="true"/>
   </hierarchy>
 
   <group type="strand" value="gate" label="The Gate" count="1">
@@ -30,5 +31,90 @@
     <card id="15" order="5"/>
     <card id="16" order="6"/>
     <card id="17" order="7"/>
+  </group>
+  <group type="suit" value="earth" label="Earth" count="15">
+    <card id="ea01" order="1"/>
+    <card id="ea02" order="2"/>
+    <card id="ea03" order="3"/>
+    <card id="ea04" order="4"/>
+    <card id="ea05" order="5"/>
+    <card id="ea06" order="6"/>
+    <card id="ea07" order="7"/>
+    <card id="ea08" order="8"/>
+    <card id="ea09" order="9"/>
+    <card id="ea10" order="10"/>
+    <card id="ea11" order="11"/>
+    <card id="ea12" order="12"/>
+    <card id="ea13" order="13"/>
+    <card id="ea14" order="14"/>
+    <card id="ea15" order="15"/>
+  </group>
+  <group type="suit" value="water" label="Water" count="15">
+    <card id="wa01" order="1"/>
+    <card id="wa02" order="2"/>
+    <card id="wa03" order="3"/>
+    <card id="wa04" order="4"/>
+    <card id="wa05" order="5"/>
+    <card id="wa06" order="6"/>
+    <card id="wa07" order="7"/>
+    <card id="wa08" order="8"/>
+    <card id="wa09" order="9"/>
+    <card id="wa10" order="10"/>
+    <card id="wa11" order="11"/>
+    <card id="wa12" order="12"/>
+    <card id="wa13" order="13"/>
+    <card id="wa14" order="14"/>
+    <card id="wa15" order="15"/>
+  </group>
+  <group type="suit" value="fire" label="Fire" count="15">
+    <card id="fi01" order="1"/>
+    <card id="fi02" order="2"/>
+    <card id="fi03" order="3"/>
+    <card id="fi04" order="4"/>
+    <card id="fi05" order="5"/>
+    <card id="fi06" order="6"/>
+    <card id="fi07" order="7"/>
+    <card id="fi08" order="8"/>
+    <card id="fi09" order="9"/>
+    <card id="fi10" order="10"/>
+    <card id="fi11" order="11"/>
+    <card id="fi12" order="12"/>
+    <card id="fi13" order="13"/>
+    <card id="fi14" order="14"/>
+    <card id="fi15" order="15"/>
+  </group>
+  <group type="suit" value="wind" label="Wind" count="15">
+    <card id="wi01" order="1"/>
+    <card id="wi02" order="2"/>
+    <card id="wi03" order="3"/>
+    <card id="wi04" order="4"/>
+    <card id="wi05" order="5"/>
+    <card id="wi06" order="6"/>
+    <card id="wi07" order="7"/>
+    <card id="wi08" order="8"/>
+    <card id="wi09" order="9"/>
+    <card id="wi10" order="10"/>
+    <card id="wi11" order="11"/>
+    <card id="wi12" order="12"/>
+    <card id="wi13" order="13"/>
+    <card id="wi14" order="14"/>
+    <card id="wi15" order="15"/>
+  </group>
+  <group type="suit" value="void" label="Void" count="15">
+    <card id="vo01" order="1"/>
+    <card id="vo02" order="2"/>
+    <card id="vo03" order="3"/>
+    <card id="vo04" order="4"/>
+    <card id="vo05" order="5"/>
+    <card id="vo06" order="6"/>
+    <card id="vo07" order="7"/>
+    <card id="vo08" order="8"/>
+    <card id="vo09" order="9"/>
+    <card id="vo10" order="10"/>
+    <card id="vo11" order="11"/>
+    <card id="vo12" order="12"/>
+    <card id="vo13" order="13"/>
+    <card id="vo14" order="14"/>
+    <card id="vo15" order="15"/>
   </group>
 </structure>

@@ -40,7 +40,7 @@ def image_name(deck_type, cid):
         if len(cid) == 2:
             return f"maj{cid}"
         for prefix, suit in (("w", "wands"), ("c", "cups"), ("s", "swords"), ("p", "pents")):
-            if cid.startswith(prefix):
+            if len(cid) == 3 and cid.startswith(prefix):  # RWS minors: w01 ... p14
                 return f"{suit}{cid[1:]}"
     return cid
 

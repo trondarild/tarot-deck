@@ -178,10 +178,10 @@
                         <xsl:when test="$deckType = 'tarot'">
                             <xsl:choose>
                                 <xsl:when test="string-length($cid) = 2">maj<xsl:value-of select="$cid"/></xsl:when>
-                                <xsl:when test="starts-with($cid, 'w')">wands<xsl:value-of select="substring($cid, 2)"/></xsl:when>
-                                <xsl:when test="starts-with($cid, 'c')">cups<xsl:value-of select="substring($cid, 2)"/></xsl:when>
-                                <xsl:when test="starts-with($cid, 's')">swords<xsl:value-of select="substring($cid, 2)"/></xsl:when>
-                                <xsl:when test="starts-with($cid, 'p')">pents<xsl:value-of select="substring($cid, 2)"/></xsl:when>
+                                <xsl:when test="string-length($cid) = 3 and starts-with($cid, 'w')">wands<xsl:value-of select="substring($cid, 2)"/></xsl:when>
+                                <xsl:when test="string-length($cid) = 3 and starts-with($cid, 'c')">cups<xsl:value-of select="substring($cid, 2)"/></xsl:when>
+                                <xsl:when test="string-length($cid) = 3 and starts-with($cid, 's')">swords<xsl:value-of select="substring($cid, 2)"/></xsl:when>
+                                <xsl:when test="string-length($cid) = 3 and starts-with($cid, 'p')">pents<xsl:value-of select="substring($cid, 2)"/></xsl:when>
                                 <xsl:otherwise><xsl:value-of select="$cid"/></xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
