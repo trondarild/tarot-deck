@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1156" viewBox="0 0 680 1156"><defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.9 0.55" result="grain"/>
+  <feComposite in="grain" in2="SourceGraphic" operator="in"/>
+</filter>
+<filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="dry" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9 0.08" numOctaves="2" seed="11" result="t"/>
+  <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.5" result="gaps"/>
+  <feComposite in="SourceGraphic" in2="gaps" operator="in" result="cut"/>
+  <feDisplacementMap in="cut" in2="t" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur stdDeviation="7"/>
+</filter>
+<filter id="mist" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="40"/>
+</filter>
+<filter id="softwash" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="5" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="30" xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="4"/>
+</filter>
+<filter id="aqua"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="21"/>
+  <feColorMatrix type="matrix" values="0 0 0 0 0.16  0 0 0 0 0.15  0 0 0 0 0.13  0 0 0 -3 1.6"/>
+</filter>
+</defs><rect width="680" height="1156" fill="#f3ebdd"/><defs>
+<filter id="tbrush" filterUnits="userSpaceOnUse" x="0" y="0" width="680" height="1156">
+  <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="tdry" filterUnits="userSpaceOnUse" x="0" y="0" width="680" height="1156">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9 0.08" numOctaves="2" seed="11" result="t"/>
+  <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.5" result="gaps"/>
+  <feComposite in="SourceGraphic" in2="gaps" operator="in" result="cut"/>
+  <feDisplacementMap in="cut" in2="t" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs><rect x="88" y="38" width="504" height="1080" fill="#e4d9c4" stroke="#b9ab90" stroke-width="1.5"/><rect x="110" y="60" width="460" height="1036" fill="#f3ebdd"/><clipPath id="scroll"><rect x="110" y="60" width="460" height="1036"/></clipPath><g clip-path="url(#scroll)"><path d="M340.0,130.5 L354.5,156.9 L325.5,156.9 Z" fill="#b5452f" stroke="#b5452f" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M110,316 L570,316 L570,966 L110,966 Z" fill="#e4ded0" opacity="0.4" filter="url(#softwash)" /><path d="M114,336 L566,338" fill="none" stroke="#1f1d1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" filter="url(#tbrush)" /><path d="M370,456 L500,456 L500,676 L370,676 Z" fill="#f3eddc" stroke="#1f1d1b" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><path d="M413.3333333333333,456 L413.3333333333333,676" fill="none" stroke="#1f1d1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><path d="M456.6666666666667,456 L456.6666666666667,676" fill="none" stroke="#1f1d1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><path d="M370,511.0 L500,511.0" fill="none" stroke="#1f1d1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><path d="M370,566.0 L500,566.0" fill="none" stroke="#1f1d1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><path d="M370,621.0 L500,621.0" fill="none" stroke="#1f1d1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><path d="M130,906 L550,906 L580,1066 L100,1066 Z" fill="#a79e8f" opacity="0.28" filter="url(#softwash)" /><path d="M130.0,906.0 L100.0,1066.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M214.0,906.0 L196.0,1066.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M298.0,906.0 L292.0,1066.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M382.0,906.0 L388.0,1066.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M466.0,906.0 L484.0,1066.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M550.0,906.0 L580.0,1066.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M130,906 Q340.0,901 550,906" fill="none" stroke="#55524d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" filter="url(#tbrush)" /><path d="M130.0,980 L330.0,980 L350.0,1026 L110.0,1026 Z" fill="#3b3834" stroke="#1f1d1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><path d="M150.0,988 L310.0,988 L328.0,1016 L132.0,1016 Z" fill="#cfcac0" stroke="#55524d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" /><path d="M170.0,1004.0 Q200.0,983.0 230.0,990.0 Q260.0,983.0 290.0,1004.0 Z" fill="#bdb8ae" stroke="#55524d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><path d="M194.0,998.4 q36.0,-5.6 66.0,0" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" /><path d="M238.0,340 L238.0,846 q12,10 -2,24" fill="none" stroke="#55524d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.75" /><path d="M180.0,1014 q10,-4 22,0" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" /><path d="M220.0,1014 q10,-4 22,0" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" /><path d="M260.0,1014 q10,-4 22,0" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" /><ellipse cx="360.0" cy="1036.0" rx="8" ry="5.5" fill="#b5452f" opacity="0.88"/><g transform="translate(450.0,996.0) scale(3.0,3.0)"><path d="M-50,-2 Q-40,-24 -6,-26 Q30,-26 48,-4 Q0,10 -50,-2 Z" fill="#b3ad9f" stroke="#1f1d1b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#brush)" /><path d="M-8,-20 Q-10,-40 -6,-60" fill="none" stroke="#1f1d1b" stroke-width="24.4" stroke-linecap="round" stroke-linejoin="round" /><path d="M-8,-20 Q-10,-40 -6,-60" fill="none" stroke="#b3ad9f" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" /><path d="M-6.0,-56.0 Q10.0,-38.0 24.0,-22.0" fill="none" stroke="#1f1d1b" stroke-width="7.4" stroke-linecap="round" stroke-linejoin="round" /><path d="M-6.0,-56.0 Q10.0,-38.0 24.0,-22.0" fill="none" stroke="#b3ad9f" stroke-width="5.0" stroke-linecap="round" stroke-linejoin="round" /><ellipse cx="24.0" cy="-22.0" rx="3.4" ry="3.0" fill="#f1ece2" stroke="#1f1d1b" stroke-width="1.4"/><circle cx="-1.0" cy="-76.0" r="12.0" fill="#f1ece2" stroke="#1f1d1b" stroke-width="2"/><path d="M5,-76 q3,2 6,0" fill="none" stroke="#1f1d1b" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" /></g></g><rect x="514" y="1040" width="42" height="42" fill="#b5452f" opacity="0.9" filter="url(#tbrush)"/><path d="M524,1052 h22 M535,1052 v20 M524,1072 h22" stroke="#f3ebdd" stroke-width="3"/><rect width="680" height="1156" fill="#7a6a50" filter="url(#paper)" opacity="0.35"/></svg>

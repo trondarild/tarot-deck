@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1156" viewBox="0 0 680 1156"><defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.9 0.55" result="grain"/>
+  <feComposite in="grain" in2="SourceGraphic" operator="in"/>
+</filter>
+<filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="dry" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9 0.08" numOctaves="2" seed="11" result="t"/>
+  <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.5" result="gaps"/>
+  <feComposite in="SourceGraphic" in2="gaps" operator="in" result="cut"/>
+  <feDisplacementMap in="cut" in2="t" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur stdDeviation="7"/>
+</filter>
+<filter id="mist" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="40"/>
+</filter>
+<filter id="softwash" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="5" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="30" xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="4"/>
+</filter>
+<filter id="aqua"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="21"/>
+  <feColorMatrix type="matrix" values="0 0 0 0 0.16  0 0 0 0 0.15  0 0 0 0 0.13  0 0 0 -3 1.6"/>
+</filter>
+</defs><rect width="680" height="1156" fill="#f3ebdd"/><defs>
+<filter id="tbrush" filterUnits="userSpaceOnUse" x="0" y="0" width="680" height="1156">
+  <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="tdry" filterUnits="userSpaceOnUse" x="0" y="0" width="680" height="1156">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9 0.08" numOctaves="2" seed="11" result="t"/>
+  <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.5" result="gaps"/>
+  <feComposite in="SourceGraphic" in2="gaps" operator="in" result="cut"/>
+  <feDisplacementMap in="cut" in2="t" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs><clipPath id="inside"><circle cx="340" cy="560" r="272"/></clipPath><g clip-path="url(#inside)"><path d="M135.1,464.9 L155.7,502.3 L114.6,502.3 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M181.4,389.8 L202.0,427.2 L160.9,427.2 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M253.7,339.3 L274.2,376.7 L233.1,376.7 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M340.0,321.4 L360.6,358.8 L319.4,358.8 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M426.3,339.3 L446.9,376.7 L405.8,376.7 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M498.6,389.8 L519.1,427.2 L478.0,427.2 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M544.9,464.9 L565.4,502.3 L524.3,502.3 Z" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M150,685 L390.0,685 L420.0,775 L120,775 Z" fill="#9a907f" opacity="0.28" filter="url(#softwash)" /><path d="M150.0,685.0 L120.0,775.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M230.0,685.0 L220.0,775.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M310.0,685.0 L320.0,775.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M390.0,685.0 L420.0,775.0" fill="none" stroke="#55524d" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" /><path d="M150,685 Q270.0,680 390.0,685" fill="none" stroke="#55524d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" filter="url(#tbrush)" /><path d="M410.0,535 L530,535 L530,689 L410.0,689 Z" fill="#fff8e4" stroke="#1f1d1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" filter="url(#tbrush)" /><ellipse cx="470.0" cy="705.0" rx="90.0" ry="18.0" fill="#fff4c9" opacity="0.8" filter="url(#wash)"/><path d="M410.0,699 L530,699" fill="none" stroke="#55524d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" filter="url(#tbrush)" /><g transform="translate(474.0,699.0) scale(1.1,1.1)"><path d="M-17,-60 Q-34,-28 -46,-3 Q0,10 46,-3 Q34,-28 17,-60 Q0,-67 -17,-60 Z" fill="#b3ad9f" stroke="#1f1d1b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#brush)" /><path d="M-46,-3 Q-30,-15 -12,-7 M46,-3 Q30,-15 12,-7" fill="none" stroke="#1f1d1b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><circle cx="0.0" cy="-75.0" r="12.0" fill="#f1ece2" stroke="#1f1d1b" stroke-width="2"/><path d="M-12,-78 Q0,-92 12,-78" fill="none" stroke="#1f1d1b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" /></g><path d="M160,737 L360,737 L372,769 L148,769 Z" fill="#3b3834" stroke="#1f1d1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><path d="M178,741 L342,741 L354,759 L166,759 Z" fill="#8a867e" /><path d="M185.0,755.0 Q222.5,737.0 260.0,743.0 Q297.5,737.0 335.0,755.0 Z" fill="#cfcac0" stroke="#55524d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><path d="M215.0,750.2 q45.0,-4.8 82.5,0" fill="none" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" /><path d="M213.2,689 L208,747" fill="none" stroke="#1f1d1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M260.0,689 L260,747" fill="none" stroke="#1f1d1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M306.8,689 L312,747" fill="none" stroke="#1f1d1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><ellipse cx="260.0" cy="689.0" rx="68.0" ry="8.0" fill="none" stroke="#1f1d1b" stroke-width="4.4"/><path d="M194,689 Q260,695 326,689" fill="none" stroke="#55524d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><circle cx="246.0" cy="749.0" r="2.8" fill="#b5452f" opacity="0.9"/><circle cx="262.0" cy="752.0" r="2.8" fill="#b5452f" opacity="0.9"/><circle cx="278.0" cy="749.0" r="2.8" fill="#b5452f" opacity="0.9"/></g><path d="M505.2,324.1 A288,288 0 1 1 329.9,272.2" fill="none" stroke="#1f1d1b" stroke-width="22" stroke-linecap="round" opacity="0.92" filter="url(#tbrush)"/><path d="M565.2,371.0 A294,294 0 1 1 239.4,283.7" fill="none" stroke="#1f1d1b" stroke-width="9" stroke-linecap="round" opacity="0.8" filter="url(#tdry)"/><path d="M480.5,316.6 A281,281 0 1 1 75.9,463.9" fill="none" stroke="#1f1d1b" stroke-width="6" stroke-linecap="round" opacity="0.6" filter="url(#tdry)"/><path d="M153.6,337.8 A290,290 0 0 1 390.4,274.4" fill="none" stroke="#1f1d1b" stroke-width="12" stroke-linecap="round" opacity="0.7" filter="url(#tdry)"/><rect x="560" y="1000" width="42" height="42" fill="#b5452f" opacity="0.9" filter="url(#tbrush)"/><path d="M570,1012 h22 M581,1012 v20 M570,1032 h22" stroke="#f3ebdd" stroke-width="3"/><rect width="680" height="1156" fill="#7a6a50" filter="url(#paper)" opacity="0.35"/></svg>
