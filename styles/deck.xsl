@@ -3,24 +3,20 @@
 
     <!--
       Pure XSLT Query Engine for Universal Card Deck Schema
-      Supports multiple deck types and recursive hierarchy
+      Supports multiple deck types and recursive hierarchy.
+      Every deck in the registry is rendered; the default is visible and
+      helper.js switches between them (XSLT 1.0 in the browser cannot read URL parameters).
     -->
 
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
-    <!-- URL Parameters (mocked in simple XSLT 1.0) -->
     <xsl:variable name="lang" select="/page/@lang"/>
-    <xsl:variable name="activeDeckId" select="'rws-tarot'"/> <!-- Default for now -->
+    <xsl:variable name="defaultDeckId" select="'rws-tarot'"/>
 
     <!-- Database Connection -->
     <xsl:variable name="baseDir">../data/</xsl:variable>
     <xsl:variable name="db_decks" select="document(concat($baseDir, 'decks.xml'))/decks"/>
-    <xsl:variable name="activeDeck" select="$db_decks/deck[@id=$activeDeckId]"/>
-
-    <!-- Load active deck resources -->
-    <xsl:variable name="db_structure" select="document(concat($baseDir, $activeDeck/structure/@href))/structure"/>
-    <xsl:variable name="db_metadata" select="document(concat($baseDir, $activeDeck/metadata/@href))/metadata"/>
-    <xsl:variable name="db_locale" select="document(concat($baseDir, $activeDeck/locales/locale[@lang=$lang]/@href))/locale"/>
+    <xsl:variable name="defaultDeck" select="$db_decks/deck[@id=$defaultDeckId]"/>
     <xsl:variable name="db_ui" select="document(concat($baseDir, 'locales/ui.xml'))/ui/strings[@lang=$lang]"/>
 
     <xsl:template match="/">
@@ -28,7 +24,7 @@
             <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <title><xsl:value-of select="$activeDeck/name"/> - <xsl:value-of select="$db_ui/title"/></title>
+                <title><xsl:value-of select="$defaultDeck/name"/> - <xsl:value-of select="$db_ui/title"/></title>
                 <link rel="stylesheet" href="styles/main.css"/>
                 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
                 <style>
@@ -46,8 +42,16 @@
                         <nav>
                             <div class="nav-links">
                                 <a href="#play"><xsl:value-of select="$db_ui/play/title"/></a>
-                                <xsl:for-each select="$db_structure/group">
-                                    <a href="#{@type}-{@value}"><xsl:value-of select="@label"/></a>
+                                <xsl:for-each select="$db_decks/deck">
+                                    <xsl:variable name="deckId" select="@id"/>
+                                    <div class="deck-nav" data-deck="{$deckId}">
+                                        <xsl:if test="$deckId != $defaultDeckId">
+                                            <xsl:attribute name="hidden">hidden</xsl:attribute>
+                                        </xsl:if>
+                                        <xsl:for-each select="document(concat($baseDir, structure/@href))/structure/group">
+                                            <a href="#{$deckId}-{@type}-{@value}"><xsl:value-of select="@label"/></a>
+                                        </xsl:for-each>
+                                    </div>
                                 </xsl:for-each>
                             </div>
                             <div class="lang-switcher">
@@ -58,8 +62,8 @@
 
                         <div class="deck-switcher">
                             <xsl:for-each select="$db_decks/deck">
-                                <button onclick="setDeck('{@id}')">
-                                    <xsl:if test="@id=$activeDeckId">
+                                <button type="button" data-deck="{@id}">
+                                    <xsl:if test="@id=$defaultDeckId">
                                         <xsl:attribute name="class">active</xsl:attribute>
                                     </xsl:if>
                                     <xsl:value-of select="name"/>
@@ -81,7 +85,7 @@
                     </section>
 
                     <main id="deck-main">
-                        <xsl:apply-templates select="$db_structure/group" mode="recursive"/>
+                        <xsl:apply-templates select="$db_decks/deck"/>
                     </main>
 
                     <footer>
@@ -93,8 +97,34 @@
         </html>
     </xsl:template>
 
+    <!-- One deck: load its tables and render its hierarchy -->
+    <xsl:template match="deck">
+        <!-- Fall back to English when the deck has no locale for the page language -->
+        <xsl:variable name="localeHref">
+            <xsl:choose>
+                <xsl:when test="locales/locale[@lang=$lang]"><xsl:value-of select="locales/locale[@lang=$lang]/@href"/></xsl:when>
+                <xsl:otherwise><xsl:value-of select="locales/locale[@lang='en']/@href"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+
+        <div class="deck" id="deck-{@id}" data-deck="{@id}">
+            <xsl:if test="@id != $defaultDeckId">
+                <xsl:attribute name="hidden">hidden</xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates select="document(concat($baseDir, structure/@href))/structure/group" mode="recursive">
+                <xsl:with-param name="deck" select="."/>
+                <xsl:with-param name="metadata" select="document(concat($baseDir, metadata/@href))/metadata"/>
+                <xsl:with-param name="locale" select="document(concat($baseDir, $localeHref))/locale"/>
+            </xsl:apply-templates>
+        </div>
+    </xsl:template>
+
     <xsl:template match="group" mode="recursive">
-        <section id="{@type}-{@value}" class="card-group">
+        <xsl:param name="deck"/>
+        <xsl:param name="metadata"/>
+        <xsl:param name="locale"/>
+
+        <section id="{$deck/@id}-{@type}-{@value}" class="card-group">
             <div class="section-header">
                 <h2><xsl:value-of select="@label"/></h2>
             </div>
@@ -102,12 +132,20 @@
             <xsl:choose>
                 <xsl:when test="group">
                     <div class="nested-groups">
-                        <xsl:apply-templates select="group" mode="recursive"/>
+                        <xsl:apply-templates select="group" mode="recursive">
+                            <xsl:with-param name="deck" select="$deck"/>
+                            <xsl:with-param name="metadata" select="$metadata"/>
+                            <xsl:with-param name="locale" select="$locale"/>
+                        </xsl:apply-templates>
                     </div>
                 </xsl:when>
                 <xsl:otherwise>
                     <div class="card-grid">
-                        <xsl:apply-templates select="card"/>
+                        <xsl:apply-templates select="card">
+                            <xsl:with-param name="deck" select="$deck"/>
+                            <xsl:with-param name="metadata" select="$metadata"/>
+                            <xsl:with-param name="locale" select="$locale"/>
+                        </xsl:apply-templates>
                     </div>
                 </xsl:otherwise>
             </xsl:choose>
@@ -115,12 +153,16 @@
     </xsl:template>
 
     <xsl:template match="card">
-        <xsl:variable name="cid" select="@id"/>
-        <xsl:variable name="meta" select="$db_metadata/card[@id=$cid]"/>
-        <xsl:variable name="loc" select="$db_locale/card[@id=$cid]"/>
-        <xsl:variable name="deckType" select="$activeDeck/@type"/>
+        <xsl:param name="deck"/>
+        <xsl:param name="metadata"/>
+        <xsl:param name="locale"/>
 
-        <div class="tarot-card" id="card-{$cid}">
+        <xsl:variable name="cid" select="@id"/>
+        <xsl:variable name="meta" select="$metadata/card[@id=$cid]"/>
+        <xsl:variable name="loc" select="$locale/card[@id=$cid]"/>
+        <xsl:variable name="deckType" select="$deck/@type"/>
+
+        <div class="tarot-card" id="card-{$deck/@id}-{$cid}">
             <div class="card-image">
                 <xsl:variable name="imgName">
                     <xsl:choose>
@@ -137,7 +179,8 @@
                         <xsl:otherwise><xsl:value-of select="$cid"/></xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
-                <img src="{$activeDeck/images/@basePath}{$imgName}.jpg" alt="{$loc/title}" loading="lazy"/>
+                <!-- Decks without artwork yet: hide the broken image and keep the placeholder background -->
+                <img src="{$deck/images/@basePath}{$imgName}.jpg" alt="{$loc/title}" loading="lazy" onerror="this.classList.add('missing')"/>
             </div>
             <div class="card-content">
                 <div class="card-header-grid">
@@ -170,6 +213,7 @@
                             <xsl:when test="$meta/tarot/astrology/sign"><span class="sign-symbol"><xsl:value-of select="$meta/tarot/astrology/sign"/></span></xsl:when>
                             <xsl:when test="$meta/playing/suit"><span class="tag tag-mini-suit"><xsl:value-of select="$meta/playing/suit"/></span></xsl:when>
                             <xsl:when test="$meta/oracle/symbol"><span class="sign-symbol"><xsl:value-of select="$meta/oracle/symbol"/></span></xsl:when>
+                            <xsl:when test="$meta/custom/attribute[@name='glyph']"><span class="sign-symbol glyph"><xsl:value-of select="$meta/custom/attribute[@name='glyph']/@value"/></span></xsl:when>
                         </xsl:choose>
                     </div>
                 </div>

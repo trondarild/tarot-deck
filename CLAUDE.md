@@ -11,15 +11,21 @@ A multilingual card-deck reference built from XML, DTDs and a single XSLT 1.0 st
 There is no build, lint or test tooling. Serve the repository root and open an entry point in a browser:
 
 ```bash
-npx http-server . -p 8080     # then http://localhost:8080/index.xml or /index-uk.xml
+npx http-server . -p 8080 -c-1   # then http://localhost:8080/index.xml or /index-uk.xml
 ```
 
-The site must be served over HTTP. Native browser XSLT (triggered by `<?xml-stylesheet?>`) cannot `document()`-load the data files from `file://`.
+`-c-1` disables caching; without it http-server sends `max-age=3600` and the browser keeps stale XSL/XML/JS after edits. The site must be served over HTTP. Native browser XSLT (triggered by `<?xml-stylesheet?>`) cannot `document()`-load the data files from `file://`.
 
 Validate data against the DTDs (the `<!DOCTYPE ... SYSTEM ...>` in each file points at `data/schemas/`); no output means valid:
 
 ```bash
 xmllint --noout --valid data/decks.xml data/decks/*/structure.xml data/decks/*/metadata.xml data/decks/*/locales/*.xml
+```
+
+Placeholder card images for decks without artwork are generated from the deck data (needs Pillow; never overwrites existing files, so real art can replace them one at a time):
+
+```bash
+python3 tools/make_placeholders.py zen pessimistic   # or no arguments for all decks
 ```
 
 `xsltproc` is also available for checking the stylesheet from the command line. Markdown is linted with `.markdownlint.yaml` (MD013 off); `.editorconfig` requires 2-space indent, LF, final newline.
@@ -42,10 +48,12 @@ Cards are joined across files by `@id`: `structure.xml` supplies the ordering an
 Things that span files and are easy to miss:
 
 - **Adding or changing a deck** touches `decks.xml` (registry entry, `cardCount`, `images/@basePath`), the deck's three data files, and possibly `deck.xsl`. `deck/@type` is restricted by `decks.dtd` to `tarot|playing-cards|oracle`, and the stylesheet branches on it for image naming and header fields.
-- **Image filenames are derived in `deck.xsl`**, not stored in data. For tarot, card id `00`–`21` maps to `maj{id}.jpg`, and `w|c|s|p{nn}` maps to `wands|cups|swords|pents{nn}.jpg`; other deck types use `{id}.jpg`. Only the RWS images exist under `assets/img/big/`; the `playing/` and `lenormand/` base paths in the registry have no images yet.
+- **Image filenames are derived in `deck.xsl`**, not stored in data. For tarot, card id `00`–`21` maps to `maj{id}.jpg`, and `w|c|s|p{nn}` maps to `wands|cups|swords|pents{nn}.jpg`; other deck types use `{id}.jpg`. Only the RWS images under `assets/img/big/` are artwork; the other decks' image directories hold generated placeholders.
 - **Metadata and locale fields are optional per card.** The stylesheet uses `xsl:if`/`xsl:choose` to tolerate missing `hebrew`, `astrology`, `description`, and falls back to the card id when a title is absent.
 - **Adding a language** needs `deck.{lang}.xml` for each deck, a `<strings lang=>` block in `ui.xml`, a new `index-{lang}.xml`, and a registry `<locale>` entry. The language switcher in `deck.xsl` and `setLanguage()` in `scripts/helper.js` hard-code `en`/`uk`, so both need editing.
-- **Active deck is hard-coded.** `$activeDeckId` in `deck.xsl` is the literal `'rws-tarot'`. `setDeck()` in `helper.js` writes a `?deck=` query parameter that the stylesheet does not read, because XSLT 1.0 in the browser cannot see URL parameters. Multi-deck selection is unfinished (see `docs/ROADMAP.md`).
+- **Every registered deck is rendered.** XSLT 1.0 in the browser cannot see URL parameters, so `deck.xsl` renders all decks in `decks.xml` (each in `<div class="deck" data-deck=…>`, non-default ones `hidden`; default is `$defaultDeckId`). `setDeck()` in `helper.js` toggles visibility, stores the choice in `?deck=`, and resets the draw pile; shuffle draws only from the visible deck. Deck data reaches the `group` and `card` templates as parameters (`deck`, `metadata`, `locale`), not globals. Card element ids are `card-{deckId}-{cardId}`, so card ids need only be unique within a deck.
+- **Locale fallback.** A deck without a locale for the page language falls back to its `en` locale.
+- **Zen and pessimistic decks** (`data/decks/zen`, `data/decks/pessimistic`) are major-arcana-only decks of type `tarot`; their card meanings come from `docs/*-symbolism.md`, and their artwork (`assets/img/{deck}/majNN.jpg`) is placeholders from `tools/make_placeholders.py` for now. An image that fails to load gets the `missing` class and shows the grey card background.
 - **Card detail modal and the play area** (shuffle/pull, `#play` in `deck.xsl`) are built by `scripts/helper.js` from the rendered DOM (`.tarot-card` elements under `#deck-main` and their CSS classes), so renaming a class in `deck.xsl` breaks both. Button labels for the play area come from `<play>` in `ui.xml`.
 
 ## Docs

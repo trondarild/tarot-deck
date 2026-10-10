@@ -38,4 +38,28 @@
     </locales>
     <images basePath="assets/img/lenormand/"/>
   </deck>
+
+  <deck id="zen" type="tarot" version="1.0">
+    <name>Zen Deck</name>
+    <description>Major series of 18 cards: Mu, Kuoan's ten ox-herding pictures and seven transmission scenes</description>
+    <cardCount>18</cardCount>
+    <structure href="decks/zen/structure.xml"/>
+    <metadata href="decks/zen/metadata.xml"/>
+    <locales>
+      <locale lang="en" href="decks/zen/locales/deck.en.xml"/>
+    </locales>
+    <images basePath="assets/img/zen/"/>
+  </deck>
+
+  <deck id="pessimistic" type="tarot" version="1.0">
+    <name>Pessimist Deck</name>
+    <description>Major series of 16 cards in three movements, from Silenus to Zapffe's last Messiah</description>
+    <cardCount>16</cardCount>
+    <structure href="decks/pessimistic/structure.xml"/>
+    <metadata href="decks/pessimistic/metadata.xml"/>
+    <locales>
+      <locale lang="en" href="decks/pessimistic/locales/deck.en.xml"/>
+    </locales>
+    <images basePath="assets/img/pessimistic/"/>
+  </deck>
 </decks>

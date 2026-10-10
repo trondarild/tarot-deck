@@ -283,6 +283,27 @@ h3 {
     text-align: right;
 }
 
+/* Deck switching: helper.js toggles the hidden attribute */
+[hidden] {
+    display: none !important;
+}
+
+.deck-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Decks without artwork yet keep the grey placeholder */
+img.missing {
+    visibility: hidden;
+}
+
+.glyph {
+    font-family: serif;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
 /* Play area: shuffle and pull */
 .play-controls {
     display: flex;

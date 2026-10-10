@@ -8,19 +8,40 @@ console.log('[Tarot] helper.js active');
 function setLanguage(lang) {
   // Redirect to appropriate XML entry point
   // Browser will handle native XSLT transformation
-  if (lang === 'uk') {
-    window.location.href = 'index-uk.xml';
-  } else {
-    window.location.href = 'index.xml';
-  }
+  // Keep ?deck= so the chosen deck survives the switch
+  const page = lang === 'uk' ? 'index-uk.xml' : 'index.xml';
+  window.location.href = page + window.location.search;
 }
 
 function setDeck(id) {
-  // Use URL search params as a simple way to pass activeDeckId to XSLT (if supported by processor)
-  // or handle via URL fragments. For now, we'll use search params.
+  // XSLT renders every deck; show the chosen one and hide the rest
+  const deck = document.getElementById(`deck-${id}`);
+  if (!deck) return;
+
+  document.querySelectorAll('.deck, .deck-nav').forEach(el => {
+    el.hidden = el.dataset.deck !== id;
+  });
+  document.querySelectorAll('.deck-switcher button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.deck === id);
+  });
+
+  const name = document.querySelector(`.deck-switcher button[data-deck="${id}"]`).textContent.trim();
+  document.title = `${name} - ${document.querySelector('h1').textContent.trim()}`;
+
   const url = new URL(window.location.href);
   url.searchParams.set('deck', id);
-  window.location.href = url.toString();
+  history.replaceState(null, '', url);
+
+  resetPlay();
+}
+
+function initDeck() {
+  document.querySelectorAll('.deck-switcher button').forEach(btn => {
+    btn.onclick = () => setDeck(btn.dataset.deck);
+  });
+
+  const id = new URLSearchParams(window.location.search).get('deck');
+  if (id) setDeck(id);
 }
 
 function initUI() {
@@ -30,6 +51,7 @@ function initUI() {
   initCards();
   initModal();
   initPlay();
+  initDeck();
 }
 
 // Draw pile of card ids; filled by shuffleDeck(), emptied by pullCard()
@@ -47,7 +69,7 @@ function initPlay() {
 }
 
 function shuffleDeck() {
-  const ids = Array.from(document.querySelectorAll('#deck-main .tarot-card'), card => card.id.replace('card-', ''));
+  const ids = Array.from(document.querySelectorAll('#deck-main .deck:not([hidden]) .tarot-card'), card => card.id.replace('card-', ''));
 
   // Fisher-Yates
   for (let i = ids.length - 1; i > 0; i--) {
@@ -57,6 +79,13 @@ function shuffleDeck() {
 
   drawPile = ids;
   shuffled = true;
+  document.getElementById('spread').replaceChildren();
+  updatePile();
+}
+
+function resetPlay() {
+  drawPile = [];
+  shuffled = false;
   document.getElementById('spread').replaceChildren();
   updatePile();
 }

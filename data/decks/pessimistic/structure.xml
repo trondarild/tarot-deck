@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE structure SYSTEM "../../schemas/structure.dtd">
+<structure deck="pessimistic">
+  <hierarchy>
+    <level name="strand" label="Strand"/>
+  </hierarchy>
+
+  <group type="strand" value="threshold" label="Before Birth" count="1">
+    <card id="00" order="1"/>
+  </group>
+
+  <group type="strand" value="awakening" label="Awakening and Disillusion" count="4">
+    <card id="01" order="1"/>
+    <card id="02" order="2"/>
+    <card id="03" order="3"/>
+    <card id="04" order="4"/>
+  </group>
+
+  <group type="strand" value="world" label="The World as It Is" count="6">
+    <card id="05" order="1"/>
+    <card id="06" order="2"/>
+    <card id="07" order="3"/>
+    <card id="08" order="4"/>
+    <card id="09" order="5"/>
+    <card id="10" order="6"/>
+  </group>
+
+  <group type="strand" value="responses" label="Responses" count="5">
+    <card id="11" order="1"/>
+    <card id="12" order="2"/>
+    <card id="13" order="3"/>
+    <card id="14" order="4"/>
+    <card id="15" order="5"/>
+  </group>
+</structure>

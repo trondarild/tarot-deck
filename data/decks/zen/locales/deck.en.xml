@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../schemas/locale.dtd">
+<locale lang="en" deck="zen">
+  <card id="00"><title>Mu</title><description><p>A question that cannot be answered in the terms it was asked.</p></description></card>
+  <card id="01"><title>Searching for the Ox</title><description><p>A sense of lack with no object, or a search whose object cannot yet be named.</p></description></card>
+  <card id="02"><title>Seeing the Traces</title><description><p>Early evidence that something is there: a book, a teacher, a remark that rings true.</p></description></card>
+  <card id="03"><title>Seeing the Ox</title><description><p>A sudden clarity that is real and carries no guarantee that it will last.</p></description></card>
+  <card id="04"><title>Catching the Ox</title><description><p>A struggle to hold on to something seen, against habits that return quickly.</p></description></card>
+  <card id="05"><title>Herding the Ox</title><description><p>Disciplined, steady, unglamorous work; progress through regularity.</p></description></card>
+  <card id="06"><title>Riding the Ox Home</title><description><p>Ease after effort, with practice and life in agreement.</p></description></card>
+  <card id="07"><title>The Ox Forgotten, Leaving the Man Alone</title><description><p>The tool has done its work and can be put down.</p></description></card>
+  <card id="08"><title>The Ox and the Man Both Gone Out of Sight</title><description><p>A clearing in which roles, goals and the self that held them lose their grip.</p></description></card>
+  <card id="09"><title>Returning to the Source</title><description><p>Seeing the situation as it is, without commentary.</p></description></card>
+  <card id="10"><title>Entering the Market with Open Hands</title><description><p>Returning to ordinary life and being useful there without announcing it.</p></description></card>
+  <card id="11"><title>The Flower and the Smile</title><description><p>A recognition that passes between two people without explanation.</p></description></card>
+  <card id="12"><title>Facing the Wall</title><description><p>A refusal to explain; solitude in the service of a long task.</p></description></card>
+  <card id="13"><title>Pacifying the Mind</title><description><p>A worry looked at directly, which loses its solid form.</p></description></card>
+  <card id="14"><title>No Mirror, No Stand</title><description><p>Dropping a project of self-improvement whose problem does not exist.</p></description></card>
+  <card id="15"><title>Ordinary Mind</title><description><p>Attention to what is already in front of you.</p></description></card>
+  <card id="16"><title>The Wild Fox</title><description><p>A loophole used once too often: no insight exempts one from consequences.</p></description></card>
+  <card id="17"><title>The Shout</title><description><p>A direct interruption that cuts off a borrowed story.</p></description></card>
+</locale>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metadata SYSTEM "../../schemas/metadata.dtd">
+<metadata deck="pessimistic">
+  <card id="00"><core><displayNumber>0</displayNumber><sortOrder>1</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="01"><core><displayNumber>I</displayNumber><sortOrder>2</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="02"><core><displayNumber>II</displayNumber><sortOrder>3</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="03"><core><displayNumber>III</displayNumber><sortOrder>4</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="04"><core><displayNumber>IV</displayNumber><sortOrder>5</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="05"><core><displayNumber>V</displayNumber><sortOrder>6</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="06"><core><displayNumber>VI</displayNumber><sortOrder>7</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="07"><core><displayNumber>VII</displayNumber><sortOrder>8</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="08"><core><displayNumber>VIII</displayNumber><sortOrder>9</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="09"><core><displayNumber>IX</displayNumber><sortOrder>10</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="10"><core><displayNumber>X</displayNumber><sortOrder>11</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="11"><core><displayNumber>XI</displayNumber><sortOrder>12</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="12"><core><displayNumber>XII</displayNumber><sortOrder>13</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="13"><core><displayNumber>XIII</displayNumber><sortOrder>14</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="14"><core><displayNumber>XIV</displayNumber><sortOrder>15</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+  <card id="15"><core><displayNumber>XV</displayNumber><sortOrder>16</sortOrder></core><tarot><arcana>major</arcana></tarot></card>
+</metadata>

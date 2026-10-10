@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../schemas/locale.dtd">
+<locale lang="en" deck="pessimistic">
+  <card id="00"><title>The Unborn</title><description><p>A question asked before there is anything to lose.</p></description></card>
+  <card id="01"><title>The Giant Deer</title><description><p>An awareness greater than the situation requires.</p></description></card>
+  <card id="02"><title>The First Illusion: Happiness Here</title><description><p>Satisfaction pursued in the immediate, achieved, and not felt.</p></description></card>
+  <card id="03"><title>The Second Illusion: Happiness Hereafter</title><description><p>Deferred fulfilment: effort now, to be repaid elsewhere.</p></description></card>
+  <card id="04"><title>The Third Illusion: Progress</title><description><p>Faith in a future that will justify the present.</p></description></card>
+  <card id="05"><title>Vanity</title><description><p>Labour whose point has gone, or a success that arrives without satisfaction.</p></description></card>
+  <card id="06"><title>The Pendulum</title><description><p>The swing between pressure and flatness, which a change of circumstance will not stop.</p></description></card>
+  <card id="07"><title>Nature and the Icelander</title><description><p>A complaint addressed to a world that does not listen.</p></description></card>
+  <card id="08"><title>The Porcupines</title><description><p>A question of closeness: how near to stand to others.</p></description></card>
+  <card id="09"><title>The Shattered God</title><description><p>Living among the remains of something that has ended.</p></description></card>
+  <card id="10"><title>The Insomniac</title><description><p>Lucidity without relief, to be endured and put to use.</p></description></card>
+  <card id="11"><title>The Stone</title><description><p>Persistence in work without a promise of result.</p></description></card>
+  <card id="12"><title>Compassion</title><description><p>Helping someone because they suffer, with no calculation of return.</p></description></card>
+  <card id="13"><title>The Broom</title><description><p>Dignity in a precarious place, and joining with others in it.</p></description></card>
+  <card id="14"><title>The Stilled Wheel</title><description><p>A pause in the cycle of wanting.</p></description></card>
+  <card id="15"><title>The Last Messiah</title><description><p>The conclusion of a long argument, and the question of whether to follow it.</p></description></card>
+</locale>
