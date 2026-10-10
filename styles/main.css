@@ -307,6 +307,17 @@ img.missing {
     white-space: nowrap;
 }
 
+/* Romanised reading under a glyph, e.g. 正中偏 / shōchūhen */
+.glyph-reading {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.45em;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    text-align: right;
+}
+
 /* Play area: shuffle and pull */
 .play-controls {
     display: flex;

@@ -29,11 +29,11 @@
   <card id="ea08"><core><displayNumber>8</displayNumber><sortOrder>26</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
   <card id="ea09"><core><displayNumber>9</displayNumber><sortOrder>27</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
   <card id="ea10"><core><displayNumber>10</displayNumber><sortOrder>28</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
-  <card id="ea11"><core><displayNumber>Rank I</displayNumber><sortOrder>29</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
-  <card id="ea12"><core><displayNumber>Rank II</displayNumber><sortOrder>30</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
-  <card id="ea13"><core><displayNumber>Rank III</displayNumber><sortOrder>31</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
-  <card id="ea14"><core><displayNumber>Rank IV</displayNumber><sortOrder>32</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
-  <card id="ea15"><core><displayNumber>Rank V</displayNumber><sortOrder>33</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="地"/></custom></card>
+  <card id="ea11"><core><displayNumber>Rank I</displayNumber><sortOrder>29</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中偏"/><attribute name="reading" value="shōchūhen"/></custom></card>
+  <card id="ea12"><core><displayNumber>Rank II</displayNumber><sortOrder>30</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="偏中正"/><attribute name="reading" value="henchūshō"/></custom></card>
+  <card id="ea13"><core><displayNumber>Rank III</displayNumber><sortOrder>31</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中來"/><attribute name="reading" value="shōchūrai"/></custom></card>
+  <card id="ea14"><core><displayNumber>Rank IV</displayNumber><sortOrder>32</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中至"/><attribute name="reading" value="kenchūshi"/></custom></card>
+  <card id="ea15"><core><displayNumber>Rank V</displayNumber><sortOrder>33</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中到"/><attribute name="reading" value="kenchūtō"/></custom></card>
   <card id="wa01"><core><displayNumber>1</displayNumber><sortOrder>34</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
   <card id="wa02"><core><displayNumber>2</displayNumber><sortOrder>35</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
   <card id="wa03"><core><displayNumber>3</displayNumber><sortOrder>36</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
@@ -44,11 +44,11 @@
   <card id="wa08"><core><displayNumber>8</displayNumber><sortOrder>41</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
   <card id="wa09"><core><displayNumber>9</displayNumber><sortOrder>42</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
   <card id="wa10"><core><displayNumber>10</displayNumber><sortOrder>43</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
-  <card id="wa11"><core><displayNumber>Rank I</displayNumber><sortOrder>44</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
-  <card id="wa12"><core><displayNumber>Rank II</displayNumber><sortOrder>45</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
-  <card id="wa13"><core><displayNumber>Rank III</displayNumber><sortOrder>46</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
-  <card id="wa14"><core><displayNumber>Rank IV</displayNumber><sortOrder>47</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
-  <card id="wa15"><core><displayNumber>Rank V</displayNumber><sortOrder>48</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="水"/></custom></card>
+  <card id="wa11"><core><displayNumber>Rank I</displayNumber><sortOrder>44</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中偏"/><attribute name="reading" value="shōchūhen"/></custom></card>
+  <card id="wa12"><core><displayNumber>Rank II</displayNumber><sortOrder>45</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="偏中正"/><attribute name="reading" value="henchūshō"/></custom></card>
+  <card id="wa13"><core><displayNumber>Rank III</displayNumber><sortOrder>46</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中來"/><attribute name="reading" value="shōchūrai"/></custom></card>
+  <card id="wa14"><core><displayNumber>Rank IV</displayNumber><sortOrder>47</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中至"/><attribute name="reading" value="kenchūshi"/></custom></card>
+  <card id="wa15"><core><displayNumber>Rank V</displayNumber><sortOrder>48</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中到"/><attribute name="reading" value="kenchūtō"/></custom></card>
   <card id="fi01"><core><displayNumber>1</displayNumber><sortOrder>49</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
   <card id="fi02"><core><displayNumber>2</displayNumber><sortOrder>50</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
   <card id="fi03"><core><displayNumber>3</displayNumber><sortOrder>51</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
@@ -59,11 +59,11 @@
   <card id="fi08"><core><displayNumber>8</displayNumber><sortOrder>56</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
   <card id="fi09"><core><displayNumber>9</displayNumber><sortOrder>57</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
   <card id="fi10"><core><displayNumber>10</displayNumber><sortOrder>58</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
-  <card id="fi11"><core><displayNumber>Rank I</displayNumber><sortOrder>59</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
-  <card id="fi12"><core><displayNumber>Rank II</displayNumber><sortOrder>60</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
-  <card id="fi13"><core><displayNumber>Rank III</displayNumber><sortOrder>61</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
-  <card id="fi14"><core><displayNumber>Rank IV</displayNumber><sortOrder>62</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
-  <card id="fi15"><core><displayNumber>Rank V</displayNumber><sortOrder>63</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="火"/></custom></card>
+  <card id="fi11"><core><displayNumber>Rank I</displayNumber><sortOrder>59</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中偏"/><attribute name="reading" value="shōchūhen"/></custom></card>
+  <card id="fi12"><core><displayNumber>Rank II</displayNumber><sortOrder>60</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="偏中正"/><attribute name="reading" value="henchūshō"/></custom></card>
+  <card id="fi13"><core><displayNumber>Rank III</displayNumber><sortOrder>61</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中來"/><attribute name="reading" value="shōchūrai"/></custom></card>
+  <card id="fi14"><core><displayNumber>Rank IV</displayNumber><sortOrder>62</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中至"/><attribute name="reading" value="kenchūshi"/></custom></card>
+  <card id="fi15"><core><displayNumber>Rank V</displayNumber><sortOrder>63</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中到"/><attribute name="reading" value="kenchūtō"/></custom></card>
   <card id="wi01"><core><displayNumber>1</displayNumber><sortOrder>64</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
   <card id="wi02"><core><displayNumber>2</displayNumber><sortOrder>65</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
   <card id="wi03"><core><displayNumber>3</displayNumber><sortOrder>66</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
@@ -74,11 +74,11 @@
   <card id="wi08"><core><displayNumber>8</displayNumber><sortOrder>71</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
   <card id="wi09"><core><displayNumber>9</displayNumber><sortOrder>72</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
   <card id="wi10"><core><displayNumber>10</displayNumber><sortOrder>73</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
-  <card id="wi11"><core><displayNumber>Rank I</displayNumber><sortOrder>74</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
-  <card id="wi12"><core><displayNumber>Rank II</displayNumber><sortOrder>75</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
-  <card id="wi13"><core><displayNumber>Rank III</displayNumber><sortOrder>76</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
-  <card id="wi14"><core><displayNumber>Rank IV</displayNumber><sortOrder>77</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
-  <card id="wi15"><core><displayNumber>Rank V</displayNumber><sortOrder>78</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="風"/></custom></card>
+  <card id="wi11"><core><displayNumber>Rank I</displayNumber><sortOrder>74</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中偏"/><attribute name="reading" value="shōchūhen"/></custom></card>
+  <card id="wi12"><core><displayNumber>Rank II</displayNumber><sortOrder>75</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="偏中正"/><attribute name="reading" value="henchūshō"/></custom></card>
+  <card id="wi13"><core><displayNumber>Rank III</displayNumber><sortOrder>76</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中來"/><attribute name="reading" value="shōchūrai"/></custom></card>
+  <card id="wi14"><core><displayNumber>Rank IV</displayNumber><sortOrder>77</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中至"/><attribute name="reading" value="kenchūshi"/></custom></card>
+  <card id="wi15"><core><displayNumber>Rank V</displayNumber><sortOrder>78</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中到"/><attribute name="reading" value="kenchūtō"/></custom></card>
   <card id="vo01"><core><displayNumber>1</displayNumber><sortOrder>79</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
   <card id="vo02"><core><displayNumber>2</displayNumber><sortOrder>80</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
   <card id="vo03"><core><displayNumber>3</displayNumber><sortOrder>81</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
@@ -89,9 +89,9 @@
   <card id="vo08"><core><displayNumber>8</displayNumber><sortOrder>86</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
   <card id="vo09"><core><displayNumber>9</displayNumber><sortOrder>87</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
   <card id="vo10"><core><displayNumber>10</displayNumber><sortOrder>88</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
-  <card id="vo11"><core><displayNumber>Rank I</displayNumber><sortOrder>89</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
-  <card id="vo12"><core><displayNumber>Rank II</displayNumber><sortOrder>90</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
-  <card id="vo13"><core><displayNumber>Rank III</displayNumber><sortOrder>91</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
-  <card id="vo14"><core><displayNumber>Rank IV</displayNumber><sortOrder>92</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
-  <card id="vo15"><core><displayNumber>Rank V</displayNumber><sortOrder>93</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="空"/></custom></card>
+  <card id="vo11"><core><displayNumber>Rank I</displayNumber><sortOrder>89</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中偏"/><attribute name="reading" value="shōchūhen"/></custom></card>
+  <card id="vo12"><core><displayNumber>Rank II</displayNumber><sortOrder>90</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="偏中正"/><attribute name="reading" value="henchūshō"/></custom></card>
+  <card id="vo13"><core><displayNumber>Rank III</displayNumber><sortOrder>91</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="正中來"/><attribute name="reading" value="shōchūrai"/></custom></card>
+  <card id="vo14"><core><displayNumber>Rank IV</displayNumber><sortOrder>92</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中至"/><attribute name="reading" value="kenchūshi"/></custom></card>
+  <card id="vo15"><core><displayNumber>Rank V</displayNumber><sortOrder>93</sortOrder></core><tarot><arcana>minor</arcana></tarot><custom><attribute name="glyph" value="兼中到"/><attribute name="reading" value="kenchūtō"/></custom></card>
 </metadata>

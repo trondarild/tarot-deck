@@ -222,7 +222,15 @@
                             <xsl:when test="$meta/tarot/astrology/sign"><span class="sign-symbol"><xsl:value-of select="$meta/tarot/astrology/sign"/></span></xsl:when>
                             <xsl:when test="$meta/playing/suit"><span class="tag tag-mini-suit"><xsl:value-of select="$meta/playing/suit"/></span></xsl:when>
                             <xsl:when test="$meta/oracle/symbol"><span class="sign-symbol"><xsl:value-of select="$meta/oracle/symbol"/></span></xsl:when>
-                            <xsl:when test="$meta/custom/attribute[@name='glyph']"><span class="sign-symbol glyph"><xsl:value-of select="$meta/custom/attribute[@name='glyph']/@value"/></span></xsl:when>
+                            <xsl:when test="$meta/custom/attribute[@name='glyph']">
+                                <span class="sign-symbol glyph">
+                                    <xsl:value-of select="$meta/custom/attribute[@name='glyph']/@value"/>
+                                    <!-- Romanised reading, e.g. for the Zen rank names -->
+                                    <xsl:if test="$meta/custom/attribute[@name='reading']">
+                                        <span class="glyph-reading"><xsl:value-of select="$meta/custom/attribute[@name='reading']/@value"/></span>
+                                    </xsl:if>
+                                </span>
+                            </xsl:when>
                         </xsl:choose>
                     </div>
                 </div>

@@ -184,7 +184,7 @@ function showCardDetails(cid) {
                 </div>
                 <div class="modal-title-row">
                     <h2>${getVal('.card-title')}</h2>
-                    <span class="sign-symbol">${getVal('.sign-symbol') || getVal('.tag-mini-suit')}</span>
+                    <span class="sign-symbol">${card.querySelector('.sign-symbol')?.innerHTML.trim() || getVal('.tag-mini-suit')}</span>
                 </div>
                 ${description || !symbolism ? `<div class="full-description">${description || 'No description available.'}</div>` : ''}
                 ${symbolism ? `<div class="modal-symbolism">${symbolism}</div>` : ''}
