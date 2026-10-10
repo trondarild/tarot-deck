@@ -68,12 +68,24 @@ function initPlay() {
   updatePile();
 }
 
+// Uniform random integer in [0, n), from the operating system's entropy pool.
+// Math.random() has too little state to reach every ordering of a 78-card deck.
+// Rejection sampling avoids the bias of taking a plain remainder.
+function randomBelow(n) {
+  const limit = Math.floor(0x100000000 / n) * n;
+  const buf = new Uint32Array(1);
+  do {
+    crypto.getRandomValues(buf);
+  } while (buf[0] >= limit);
+  return buf[0] % n;
+}
+
 function shuffleDeck() {
   const ids = Array.from(document.querySelectorAll('#deck-main .deck:not([hidden]) .tarot-card'), card => card.id.replace('card-', ''));
 
   // Fisher-Yates
   for (let i = ids.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = randomBelow(i + 1);
     [ids[i], ids[j]] = [ids[j], ids[i]];
   }
 
