@@ -4,7 +4,8 @@
 <!ATTLIST deck
   id ID #REQUIRED
   type (tarot|playing-cards|oracle) #REQUIRED
-  version CDATA #IMPLIED>
+  version CDATA #IMPLIED
+  status (active|draft) "active">
 
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT description (#PCDATA)>

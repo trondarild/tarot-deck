@@ -16,7 +16,9 @@
     <!-- Database Connection -->
     <xsl:variable name="baseDir">../data/</xsl:variable>
     <xsl:variable name="db_decks" select="document(concat($baseDir, 'decks.xml'))/decks"/>
-    <xsl:variable name="defaultDeck" select="$db_decks/deck[@id=$defaultDeckId]"/>
+    <!-- Decks marked status="draft" in the registry are not shown -->
+    <xsl:variable name="shown_decks" select="$db_decks/deck[not(@status='draft')]"/>
+    <xsl:variable name="defaultDeck" select="$shown_decks[@id=$defaultDeckId]"/>
     <xsl:variable name="db_ui" select="document(concat($baseDir, 'locales/ui.xml'))/ui/strings[@lang=$lang]"/>
 
     <xsl:template match="/">
@@ -42,7 +44,7 @@
                         <nav>
                             <div class="nav-links">
                                 <a href="#play"><xsl:value-of select="$db_ui/play/title"/></a>
-                                <xsl:for-each select="$db_decks/deck">
+                                <xsl:for-each select="$shown_decks">
                                     <xsl:variable name="deckId" select="@id"/>
                                     <div class="deck-nav" data-deck="{$deckId}">
                                         <xsl:if test="$deckId != $defaultDeckId">
@@ -61,7 +63,7 @@
                         </nav>
 
                         <div class="deck-switcher">
-                            <xsl:for-each select="$db_decks/deck">
+                            <xsl:for-each select="$shown_decks">
                                 <button type="button" data-deck="{@id}">
                                     <xsl:if test="@id=$defaultDeckId">
                                         <xsl:attribute name="class">active</xsl:attribute>
@@ -85,7 +87,7 @@
                     </section>
 
                     <main id="deck-main">
-                        <xsl:apply-templates select="$db_decks/deck"/>
+                        <xsl:apply-templates select="$shown_decks"/>
                     </main>
 
                     <footer>

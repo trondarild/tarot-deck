@@ -15,7 +15,7 @@
     <images basePath="assets/img/big/"/>
   </deck>
 
-  <deck id="standard-playing" type="playing-cards" version="1.0">
+  <deck id="standard-playing" type="playing-cards" version="1.0" status="draft">
     <name>Standard Playing Cards</name>
     <description>52-card French-suited deck</description>
     <cardCount>52</cardCount>
@@ -27,7 +27,7 @@
     <images basePath="assets/img/playing/"/>
   </deck>
 
-  <deck id="lenormand" type="oracle" version="1.0">
+  <deck id="lenormand" type="oracle" version="1.0" status="draft">
     <name>Lenormand Oracle</name>
     <description>36-card fortune-telling deck</description>
     <cardCount>36</cardCount>
