@@ -7,6 +7,12 @@
             <minor>Minor Arcana</minor>
         </nav>
         <footer>© 2026 Tarot XML Project</footer>
+        <play>
+            <title>Draw</title>
+            <shuffle>Shuffle</shuffle>
+            <pull>Pull</pull>
+            <remaining>Cards remaining</remaining>
+        </play>
     </strings>
     <strings lang="uk">
         <title>Таро Ілюстрований Ключ</title>
@@ -15,5 +21,11 @@
             <minor>Молодші Аркани</minor>
         </nav>
         <footer>© 2026 Таро XML Проєкт</footer>
+        <play>
+            <title>Розклад</title>
+            <shuffle>Перетасувати</shuffle>
+            <pull>Витягнути</pull>
+            <remaining>Залишилось карт</remaining>
+        </play>
     </strings>
 </ui>

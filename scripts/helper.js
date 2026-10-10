@@ -29,6 +29,71 @@ function initUI() {
 
   initCards();
   initModal();
+  initPlay();
+}
+
+// Draw pile of card ids; filled by shuffleDeck(), emptied by pullCard()
+let drawPile = [];
+let shuffled = false;
+
+function initPlay() {
+  const shuffleBtn = document.getElementById('shuffle-btn');
+  const pullBtn = document.getElementById('pull-btn');
+  if (!shuffleBtn || !pullBtn) return;
+
+  shuffleBtn.onclick = shuffleDeck;
+  pullBtn.onclick = pullCard;
+  updatePile();
+}
+
+function shuffleDeck() {
+  const ids = Array.from(document.querySelectorAll('#deck-main .tarot-card'), card => card.id.replace('card-', ''));
+
+  // Fisher-Yates
+  for (let i = ids.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [ids[i], ids[j]] = [ids[j], ids[i]];
+  }
+
+  drawPile = ids;
+  shuffled = true;
+  document.getElementById('spread').replaceChildren();
+  updatePile();
+}
+
+function pullCard() {
+  const cid = drawPile.shift();
+  if (cid === undefined) return;
+
+  const source = document.getElementById(`card-${cid}`);
+  const spread = document.getElementById('spread');
+
+  const pulled = document.createElement('div');
+  pulled.className = 'pulled-card';
+  pulled.onclick = () => showCardDetails(cid);
+
+  const position = document.createElement('span');
+  position.className = 'pulled-position';
+  position.textContent = spread.children.length + 1;
+
+  const img = source.querySelector('img').cloneNode();
+  img.removeAttribute('loading');
+
+  const title = document.createElement('span');
+  title.className = 'pulled-title';
+  title.textContent = source.querySelector('.card-title')?.textContent.trim() || cid;
+
+  pulled.append(position, img, title);
+  spread.appendChild(pulled);
+  updatePile();
+}
+
+function updatePile() {
+  const pullBtn = document.getElementById('pull-btn');
+  const count = document.getElementById('pile-count');
+
+  pullBtn.disabled = drawPile.length === 0;
+  count.textContent = shuffled ? `${count.dataset.label}: ${drawPile.length}` : '';
 }
 
 function initCards() {

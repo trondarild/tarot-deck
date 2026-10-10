@@ -45,6 +45,7 @@
                         <h1><xsl:value-of select="$db_ui/title"/></h1>
                         <nav>
                             <div class="nav-links">
+                                <a href="#play"><xsl:value-of select="$db_ui/play/title"/></a>
                                 <xsl:for-each select="$db_structure/group">
                                     <a href="#{@type}-{@value}"><xsl:value-of select="@label"/></a>
                                 </xsl:for-each>
@@ -66,6 +67,18 @@
                             </xsl:for-each>
                         </div>
                     </header>
+
+                    <section id="play" class="play-area">
+                        <div class="section-header">
+                            <h2><xsl:value-of select="$db_ui/play/title"/></h2>
+                        </div>
+                        <div class="play-controls">
+                            <button id="shuffle-btn" type="button"><xsl:value-of select="$db_ui/play/shuffle"/></button>
+                            <button id="pull-btn" type="button" disabled="disabled"><xsl:value-of select="$db_ui/play/pull"/></button>
+                            <span id="pile-count" class="pile-count" data-label="{$db_ui/play/remaining}"></span>
+                        </div>
+                        <div id="spread" class="spread" data-layout="sequence"></div>
+                    </section>
 
                     <main id="deck-main">
                         <xsl:apply-templates select="$db_structure/group" mode="recursive"/>
