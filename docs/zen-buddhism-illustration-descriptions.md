@@ -110,14 +110,14 @@ Style suffix used at the end of every prompt:
 
 ### VIII — Ox and Man Both Forgotten (人牛俱忘)
 
-**Prompt.** A single large hand-brushed ink circle (ensō) on cream paper, with nothing inside it at all: no figure, no animal, no ground, no plant, no mist, no mark. The inside of the circle is bare, unpainted paper, the same colour as the paper outside it. The brushstroke of the circle is a single thick dry-brush line, slightly open at the end. The only other mark is a small square muted vermilion seal in the lower right corner of the paper, outside the circle, with an abstract mark. Silent, empty mood. Japanese sumi-e ink-wash painting, Muromachi style after Shūbun and Sesshū, black and grey ink on warm textured cream paper, dry-brush strokes, generous empty space, a single muted vermilion accent, portrait 2:3, narrow plain paper border, no text, no lettering, no gold, no glow, not photorealistic.
+**Prompt.** Inside a single hand-brushed ink circle (ensō), an empty clearing at the edge of a field: open, level ground with sparse low tufts of grass and a single small pebble, a faint line of distant hills in pale grey wash with a band of mist below them, and three thin trees with a few bare branches standing together at the right side. No person, no animal, no hut and no path. Most of the circle is open ground and unpainted paper. The only muted vermilion is a small square seal outside the circle at lower right. Quiet, vacant mood. Japanese sumi-e ink-wash painting, Muromachi style after Shūbun and Sesshū, black and grey ink on warm textured cream paper, dry-brush strokes, generous empty space, a single muted vermilion accent, portrait 2:3, narrow plain paper border, no text, no lettering, no gold, no glow, not photorealistic.
 
 **Notes.**
 
-- Required elements: the circle alone; the vermilion seal as the only accent.
-- Composition: circle centred, same weight and size as on every other card; inside entirely blank.
-- Continuity: the herdsman and ox of I-VII are both absent. The circle is the same frame that held every earlier scene.
-- Watch for: anything added inside the circle (a moon, dot, figure, horizon, texture or wash); legible seal characters; a second red element.
+- Required elements: the open clearing; sparse ground cover; a few trees at one side; no herdsman and no ox.
+- Composition: horizon a little above the middle of the circle, trees clustered at the right, the centre left open. The clearing should read as the place where the figures were, not as a new scene.
+- Continuity: the herdsman and ox of I–VII are absent. The traditional picture is an empty circle; this deck shows an empty clearing instead, by design decision (2026-10-10), so the card does not read as a missing image.
+- Watch for: a figure, animal, hoofprints or rope added to the scene; a dense forest; a path leading somewhere; a second red element.
 
 ### IX — Returning to the Source (返本還源)
 

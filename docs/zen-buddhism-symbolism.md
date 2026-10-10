@@ -138,7 +138,7 @@ Card 0, Mu, has no number. It stands before both strands, like the Fool, as the 
 
 **Scene.** Whip, rope, ox and man have all disappeared. The preface says confusion has cleared and only serenity remains, without even the idea of holiness; where there is no duality, not even a thousand eyes could find a gap, and a holiness that birds would honour with flowers is an embarrassment. In the verse, no one can survey the vastness of heaven, and a snowflake cannot fall on a blazing furnace.
 
-**Symbols.** The circle is a blank. It stands for emptiness (*śūnyatā*, *kū*, 空), wholeness and the completion of a movement, and in Zen painting the brush circle is a signature of the artist's state at the moment of drawing. The furnace and snowflake show a mind in which nothing lodges.
+**Symbols.** In Kuoan's picture the circle is a blank; this deck shows it as an empty clearing, with the ground and a few trees and no one in it. It stands for emptiness (*śūnyatā*, *kū*, 空), wholeness and the completion of a movement, and in Zen painting the brush circle is a signature of the artist's state at the moment of drawing. The furnace and snowflake show a mind in which nothing lodges.
 
 **Teaching.** The doctrine is the dropping of subject and object together (*jingyū gubō*), the emptiness of both self and means. The Heart Sutra's "form is emptiness" belongs to this stage. Dongshan's Five Ranks give a parallel in the first rank, the relative within the absolute, where particulars are absorbed into emptiness.
 

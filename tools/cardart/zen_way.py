@@ -533,7 +533,24 @@ def zen_alone(rng):
 
 
 def zen_empty(rng):
-    return svg(enso_stroke() + seal(), ZEN_PAPER)
+    """Ox and herdsman both gone: an empty clearing, sparse ground cover, a few trees at the side.
+    No figure and no ox; the seal is the only vermilion."""
+    out = [enso_open()]
+    out.append(hills(rng, [(560, 50, PALE, 0.16, 130)]))
+    out.append(mist(330, 600, 260, 40, 0.7))
+    out.append(ground(705, 40, 640, op=0.12))
+    # a few trees at the right side, kept small so the clearing dominates
+    out.append(trunk(rng, 500, 708, 470, 7, lean=-6, leafy=4))
+    out.append(trunk(rng, 548, 712, 430, 9, lean=4, leafy=5))
+    out.append(trunk(rng, 462, 704, 560, 4, lean=-3, leafy=2))
+    # sparse vegetation: scattered low tufts, thinning toward the centre
+    for cx_, cy_, n in [(110, 745, 16), (180, 800, 10), (300, 765, 6), (410, 805, 8), (440, 735, 12), (250, 840, 8), (530, 760, 14), (580, 800, 10)]:
+        out.append(grass(rng, cx_ - 18, cx_ + 18, cy_ - 6, cy_ + 6, n, 12, 34))
+    for _ in range(14):
+        out.append(grass(rng, 80, 600, 720, 860, 1, 5, 12))
+    out.append(rock(rng, 380, 772, 16, 7, op=0.35))
+    out.append(enso_close(rng))
+    return svg("".join(out), ZEN_PAPER)
 
 
 def zen_source(rng):
