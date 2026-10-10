@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1156" viewBox="0 0 680 1156"><defs>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="3" result="n"/>
+  <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.9 0.55" result="grain"/>
+  <feComposite in="grain" in2="SourceGraphic" operator="in"/>
+</filter>
+<filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="dry" x="-10%" y="-10%" width="120%" height="120%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9 0.08" numOctaves="2" seed="11" result="t"/>
+  <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.5" result="gaps"/>
+  <feComposite in="SourceGraphic" in2="gaps" operator="in" result="cut"/>
+  <feDisplacementMap in="cut" in2="t" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur stdDeviation="7"/>
+</filter>
+<filter id="mist" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="40"/>
+</filter>
+<filter id="softwash" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="5" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="30" xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="4"/>
+</filter>
+<filter id="aqua"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="1" seed="21"/>
+  <feColorMatrix type="matrix" values="0 0 0 0 0.16  0 0 0 0 0.15  0 0 0 0 0.13  0 0 0 -3 1.6"/>
+</filter>
+</defs><rect width="680" height="1156" fill="#f3ebdd"/><defs>
+<filter id="tbrush" filterUnits="userSpaceOnUse" x="0" y="0" width="680" height="1156">
+  <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="t"/>
+  <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="tdry" filterUnits="userSpaceOnUse" x="0" y="0" width="680" height="1156">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9 0.08" numOctaves="2" seed="11" result="t"/>
+  <feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 1.5" result="gaps"/>
+  <feComposite in="SourceGraphic" in2="gaps" operator="in" result="cut"/>
+  <feDisplacementMap in="cut" in2="t" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs><clipPath id="inside"><circle cx="340" cy="560" r="272"/></clipPath><g clip-path="url(#inside)"><circle cx="135.1" cy="485.4" r="28.6" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><circle cx="340.0" cy="342.0" r="28.6" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><circle cx="544.9" cy="485.4" r="28.6" fill="#1f1d1b" stroke="#1f1d1b" stroke-width="2" stroke-linejoin="round" filter="url(#tbrush)"/><path d="M150,747 Q340.0,737 530,751 L530,1007 L150,1007 Z" fill="#cfc6b6" opacity="0.12" filter="url(#wash)"/><path d="M150,747 Q340.0,737 530,751" fill="none" stroke="#55524d" stroke-width="1.6" opacity="0.6" filter="url(#tbrush)"/><path d="M170.0,595 L220.0,595 L410.0,705 L340.0,705 Z" fill="#fff8e4" opacity="0.8" filter="url(#softwash)" /><path d="M210.0,695 L430.0,695 L420.0,705 L220.0,705 Z" fill="#b9a68a" stroke="#1f1d1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><path d="M224.0,705 L220.0,765 M416.0,705 L420.0,765" fill="none" stroke="#1f1d1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><path d="M224.0,739 L416.0,739" fill="none" stroke="#55524d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" /><path d="M245.0,649 C245.0,689 275.0,691 320.0,691 C365.0,691 395.0,689 395.0,649 Z" fill="#e4ded0" stroke="#1f1d1b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#tbrush)" /><ellipse cx="320.0" cy="649.0" rx="75.0" ry="17.0" fill="#8fa0a1" stroke="#1f1d1b" stroke-width="2"/><ellipse cx="314.0" cy="649.0" rx="15.0" ry="5.0" fill="#fff8e4" opacity="0.95" filter="url(#wash)"/><ellipse cx="314.0" cy="649.0" rx="15.0" ry="5.0" fill="none" stroke="#fff8e4" stroke-width="1.5"/><path d="M480.0,499 Q410.0,509 356.0,557" fill="none" stroke="#1f1d1b" stroke-width="13.4" stroke-linecap="round" stroke-linejoin="round" /><path d="M480.0,499 Q410.0,509 356.0,557" fill="none" stroke="#c9c4ba" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" /><ellipse cx="330.0" cy="565.0" rx="28.0" ry="8.0" fill="#f1ece2" stroke="#1f1d1b" stroke-width="2"/><path d="M310.0,567 q-3,8 -6,14" fill="none" stroke="#1f1d1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M321.0,567 q-3,8 -6,14" fill="none" stroke="#1f1d1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M332.0,567 q-3,8 -6,14" fill="none" stroke="#1f1d1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M343.0,567 q-3,8 -6,14" fill="none" stroke="#1f1d1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g><path d="M505.2,324.1 A288,288 0 1 1 329.9,272.2" fill="none" stroke="#1f1d1b" stroke-width="22" stroke-linecap="round" opacity="0.92" filter="url(#tbrush)"/><path d="M565.2,371.0 A294,294 0 1 1 239.4,283.7" fill="none" stroke="#1f1d1b" stroke-width="9" stroke-linecap="round" opacity="0.8" filter="url(#tdry)"/><path d="M480.5,316.6 A281,281 0 1 1 75.9,463.9" fill="none" stroke="#1f1d1b" stroke-width="6" stroke-linecap="round" opacity="0.6" filter="url(#tdry)"/><path d="M153.6,337.8 A290,290 0 0 1 390.4,274.4" fill="none" stroke="#1f1d1b" stroke-width="12" stroke-linecap="round" opacity="0.7" filter="url(#tdry)"/><rect x="560" y="1000" width="42" height="42" fill="#b5452f" opacity="0.9" filter="url(#tbrush)"/><path d="M570,1012 h22 M581,1012 v20 M570,1032 h22" stroke="#f3ebdd" stroke-width="3"/><rect width="680" height="1156" fill="#7a6a50" filter="url(#paper)" opacity="0.35"/></svg>

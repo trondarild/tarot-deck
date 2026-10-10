@@ -6,7 +6,7 @@ Usage:
   python3 tools/svg_cards.py zen                  # one deck
   python3 tools/svg_cards.py zen:01,02 pessimistic:00
 
-Writes assets/img/{deck}/majNN.jpg and the SVG source beside it as majNN.svg.
+Writes assets/img/{deck}/majNN.jpg (minor cards: {id}.jpg) and the SVG source beside it.
 Rendering uses headless Chrome through playwright-core: run `npm install` in tools/ once.
 """
 
@@ -25,8 +25,10 @@ sys.path.insert(0, str(TOOLS))
 
 # Modules per deck; each defines CARDS = {card_id: draw(rng) -> svg string}
 MODULES = {
-    "zen": ["zen_way", "zen_transmission"],
-    "pessimistic": ["pess_awakening", "pess_world"],
+    "zen": ["zen_way", "zen_transmission"]
+           + [f"zen_minor_{s}" for s in ("earth", "water", "fire", "wind", "void")],
+    "pessimistic": ["pess_awakening", "pess_world"]
+                   + [f"pess_minor_{s}" for s in ("isolation", "anchoring", "distraction", "sublimation")],
 }
 
 
@@ -65,9 +67,11 @@ def main(args):
             # Seed from deck and card so each card renders the same every time
             doc = cards[cid](random.Random(f"{deck}-{cid}"))
             out_dir = ROOT / "assets" / "img" / deck
-            svg_path = out_dir / f"maj{cid}.svg"
+            # Major cards are majNN; minor cards use their id, as in deck.xsl
+            name = f"maj{cid}" if len(cid) == 2 else cid
+            svg_path = out_dir / f"{name}.svg"
             svg_path.write_text(doc)
-            pairs.append((str(svg_path), str(out_dir / f"maj{cid}.png")))
+            pairs.append((str(svg_path), str(out_dir / f"{name}.png")))
     if not pairs:
         return
     subprocess.run(["node", str(TOOLS / "render_svg.js"), json.dumps(pairs)], cwd=TOOLS, check=True)
