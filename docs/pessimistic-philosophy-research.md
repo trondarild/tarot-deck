@@ -95,7 +95,16 @@ The order reads as one argument. Consciousness outgrows its use (I), each place 
 
 - **Suits:** Isolation, Anchoring, Distraction, Sublimation.
 - **Pips:** 1–10 per suit, showing the mechanism at increasing strength or cost.
-- **Court cards:** open. Hartmann's three ages (child, youth, adult) plus an old-age card would give four ranks that echo the tarot court.
+- **Court cards:** The four ages of life, set out in the subsection below.
+
+### Minor series: how it supports the major cards (proposal, 2026-10-10)
+
+- **Pips as what is evaded:** Zapffe's four mechanisms are the everyday ways people keep the insight of the major cards at bay. The suit names the mechanism, and pip n names the truth of major card n that it holds off. Anchoring 3 is anchoring in faith in an afterlife (the second illusion, card III). Distraction 6 is keeping busy so as not to feel the pendulum (card VI). Isolation 7 is not thinking about an indifferent nature (card VII). This mirrors the Zen deck's scheme in reverse: there the minor cards are the path lived in each domain, and here they are the path avoided in each mechanism.
+- **Court cards as the four ages of life:** Schopenhauer wrote on the periods of life in the *Aphorisms on the Wisdom of Life* (*Parerga and Paralipomena* I), and Hartmann tied his illusions to childhood, youth and adulthood. Page is childhood, Knight is youth, Queen is adulthood, and King is old age. Each court shows how its mechanism looks at that age. This keeps the four-court structure of the tarot and adds the old age that Hartmann's three illusions leave out.
+- **Sublimation as the bridge:** Zapffe treats sublimation as the rarest mechanism and the only productive one. Its suit can lead toward the response cards (XI–XV), especially XIII The Broom and XIV The Stilled Wheel. The other three suits stay with evasion.
+- **Suit colours from the deck's palette:** Isolation is slate (cold, distance). Anchoring is caput mortuum (blood, kin, nation). Distraction is bone (the candlelight of vanitas pleasures). Sublimation is verdigris (the patina of time).
+- **Count:** 4 suits of 10 pips and 4 courts give 56 minor cards and 72 cards in all.
+- **Cards without a pip counterpart:** Card 0 and the responses (XI–XV) stand outside the numbered run. They are the question and its answers, while the minor cards are situations.
 
 ### Handling of suicide
 

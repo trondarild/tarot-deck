@@ -112,6 +112,14 @@ The legends behind XI and XII are not historical, by scholarly consensus: the Fl
 
 That gives 5 × 15 = 75 minor cards, and 93 cards in all. A smaller variant would drop the pips and keep 25 rank cards, for 43 cards in all.
 
+### Minor series: how it supports the major cards (proposal, 2026-10-10)
+
+- **Pips as the Way in each element:** Pip n of every suit echoes major card n, Kuoan's ox-herding stage n, played out in that element's domain. Three of Water is seeing the ox in the stream of feeling; Seven of Earth is putting down the rope in daily work. In a reading, a minor card points back to the major card with its number.
+- **Element domains:** Drawn from the traditional sense of the godai. Earth is stability, the body and zazen; Water is feeling, adaptation and the tea way; Fire is effort, doubt and koan work; Wind is breath, movement and kinhin; Void is awareness itself and shikantaza.
+- **Court cards as ranks of maturity:** The Five Ranks describe how the absolute and the relative stand to each other. As courts they describe a person in one element at one degree of maturity: the pips are stages, and the courts are the people who have reached them. This departs from the social rank of the tarot court. Links to the Transmission cards (XI–XVII) are loose, since seven teachers do not map onto five ranks.
+- **Void as a special suit:** Void could keep pips, or have court cards only, echoing card 0 (Mu) and the empty circle of card VIII. Courts only would reduce the minor series from 75 to 65 cards.
+- **Cards without a pip counterpart:** Card 0 and the Transmission cards stand outside the numbered run. They are teachers and teachings, while the minor cards are situations.
+
 ### Decisions (2026-10-10)
 
 1. The Transmission strand stays: 18 major cards.
