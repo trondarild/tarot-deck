@@ -226,6 +226,20 @@
                     </p>
                 </xsl:if>
 
+                <!-- Long-form symbolism: hidden in the gallery, shown in the card modal -->
+                <xsl:if test="$loc/symbolism">
+                    <div class="card-symbolism" hidden="hidden">
+                        <xsl:for-each select="$loc/symbolism/section">
+                            <section class="symbolism-section">
+                                <h4><xsl:value-of select="@label"/></h4>
+                                <xsl:for-each select="p">
+                                    <p><xsl:apply-templates mode="inline"/></p>
+                                </xsl:for-each>
+                            </section>
+                        </xsl:for-each>
+                    </div>
+                </xsl:if>
+
                 <!-- Expanded metadata for different types -->
                 <div class="card-footer-meta">
                    <xsl:if test="$meta/playing">
@@ -237,6 +251,11 @@
                 </div>
             </div>
         </div>
+    </xsl:template>
+
+    <!-- Inline markup inside locale paragraphs -->
+    <xsl:template match="em" mode="inline">
+        <em><xsl:apply-templates mode="inline"/></em>
     </xsl:template>
 
 </xsl:stylesheet>

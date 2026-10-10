@@ -153,27 +153,32 @@ function showCardDetails(cid) {
   const modalBody = modal.querySelector('.modal-body');
   const getVal = (sel) => card.querySelector(sel)?.textContent || '';
 
+  const hebrew = getVal('.hebrew');
+  const symbolism = card.querySelector('.card-symbolism')?.innerHTML;
+
   modalBody.innerHTML = `
         <div class="modal-layout">
             <div class="modal-image-container">
                 <img src="${card.querySelector('img').src}" alt="${getVal('.card-title')}">
             </div>
             <div class="modal-text">
-                <div class="modal-header-meta" style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #2e3440; padding-bottom: 0.75rem;">
+                <div class="modal-header-meta">
                     <div>
-                        <span class="card-number" style="font-size: 1.8rem; color: #d08770; font-weight: 700;">${getVal('.card-number')}</span>
-                        ${getVal('.hebrew') ? `<span style="margin: 0 1rem; color: #4c566a">|</span><span class="hebrew" style="font-size: 2.2rem;">${getVal('.hebrew')}</span>` : ''}
+                        <span class="card-number">${getVal('.card-number')}</span>
+                        ${hebrew ? `<span class="hebrew">${hebrew}</span>` : ''}
                     </div>
                     <span class="tag">${getVal('.tag-mini')}</span>
                 </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-                    <h2 style="font-size: 2.8rem; margin: 0; text-transform: uppercase;">${getVal('.card-title')}</h2>
-                    <span class="sign-symbol" style="font-size: 3rem; color: #bf616a;">${getVal('.sign-symbol') || getVal('.tag-mini-suit')}</span>
+                <div class="modal-title-row">
+                    <h2>${getVal('.card-title')}</h2>
+                    <span class="sign-symbol">${getVal('.sign-symbol') || getVal('.tag-mini-suit')}</span>
                 </div>
-                <div class="full-description" style="font-size: 1.15rem; line-height: 1.7;">${card.querySelector('.card-description')?.innerHTML || 'No description available.'}</div>
+                <div class="full-description">${card.querySelector('.card-description')?.innerHTML || 'No description available.'}</div>
+                ${symbolism ? `<div class="modal-symbolism">${symbolism}</div>` : ''}
             </div>
         </div>
     `;
+  modal.querySelector('.modal-content').scrollTop = 0;
   modal.style.display = 'flex';
 }
 

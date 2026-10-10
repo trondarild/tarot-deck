@@ -3,14 +3,20 @@
   lang CDATA #REQUIRED
   deck CDATA #REQUIRED>
 
-<!ELEMENT card (title, description?, keywords?, divinatory?)>
+<!ELEMENT card (title, description?, keywords?, divinatory?, symbolism?)>
 <!ATTLIST card id CDATA #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT description (p+)>
-<!ELEMENT p (#PCDATA)>
+<!ELEMENT p (#PCDATA | em)*>
+<!ELEMENT em (#PCDATA)>
 <!ELEMENT keywords (keyword+)>
 <!ELEMENT keyword (#PCDATA)>
 <!ELEMENT divinatory (upright?, reversed?)>
 <!ELEMENT upright (#PCDATA)>
 <!ELEMENT reversed (#PCDATA)>
+
+<!-- Long-form symbolism, generated from docs/*-symbolism.md by tools/symbolism_to_xml.py -->
+<!ELEMENT symbolism (section+)>
+<!ELEMENT section (p+)>
+<!ATTLIST section label CDATA #REQUIRED>
