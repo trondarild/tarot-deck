@@ -31,7 +31,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
                 <style>
                     /* Inline styles for new components to be moved to main.css eventually */
-                    .deck-switcher { margin: 1rem 0; display: flex; gap: 0.5rem; }
+                    .deck-switcher { margin: 1rem 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
                     .deck-switcher button { padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; border: 1px solid #ccc; background: white; }
                     .deck-switcher button.active { background: #eee; font-weight: bold; }
                     .meta-field { font-size: 0.8rem; opacity: 0.8; }

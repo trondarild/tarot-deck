@@ -74,14 +74,17 @@ header h1 {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem 3rem;
     align-items: center;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
 }
 
 nav a {
@@ -288,9 +291,9 @@ h3 {
     display: none !important;
 }
 
+/* The active deck's section links flow in the same row as "Draw" */
 .deck-nav {
-    display: flex;
-    gap: 1.5rem;
+    display: contents;
 }
 
 /* Decks without artwork yet keep the grey placeholder */
@@ -384,6 +387,39 @@ img.missing {
     padding: 0 0.35rem;
     font-size: 0.7rem;
     font-weight: 800;
+}
+
+/* Narrow windows: smaller title and tighter header so nothing overflows */
+@media (max-width: 700px) {
+    .deck-container {
+        padding: 2rem 1rem;
+    }
+
+    header {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        padding: 0.3rem 0.4rem;
+        letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+        gap: 0.25rem 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        margin-bottom: 4rem;
+    }
 }
 
 /* Card detail modal: one scrolling column, image first, then the text */
