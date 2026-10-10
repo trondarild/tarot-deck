@@ -33,6 +33,9 @@ PESSIMIST_WASH = {
     "01": "verdigris", "10": "verdigris", "11": "verdigris", "14": "verdigris",
 }
 
+# Minor suits: Isolation, Anchoring, Distraction, Sublimation
+PESSIMIST_SUIT_WASH = {"is": "slate", "an": "caput", "di": "bone", "su": "verdigris"}
+
 
 def image_name(deck_type, cid):
     """Mirror the image naming in deck.xsl."""
@@ -83,8 +86,10 @@ def pessimist(card):
     d = ImageDraw.Draw(img)
     ink = "#2A2622"
     # Thin the wash toward the paper colour, as a watercolour tint would be
+    # Majors use the per-card wash; minors use their suit's colour
+    name = PESSIMIST_WASH.get(card["id"]) or PESSIMIST_SUIT_WASH.get(card["id"][:2], "slate")
     wash = Image.blend(Image.new("RGB", (1, 1), "#F4F0E6"),
-                       Image.new("RGB", (1, 1), WASH[PESSIMIST_WASH.get(card["id"], "slate")]), 0.45).getpixel((0, 0))
+                       Image.new("RGB", (1, 1), WASH[name]), 0.45).getpixel((0, 0))
     # Plate mark, with the card's dominant wash inside it
     d.rectangle((24, 24, SIZE[0] - 24, SIZE[1] - 24), outline="#B9B2A4", width=3)
     d.rectangle((40, 110, SIZE[0] - 40, 380), fill=wash)

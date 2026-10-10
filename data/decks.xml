@@ -53,8 +53,8 @@
 
   <deck id="pessimistic" type="tarot" version="1.0">
     <name>Pessimist Deck</name>
-    <description>Major series of 16 cards in three movements, from Silenus to Zapffe's last Messiah</description>
-    <cardCount>16</cardCount>
+    <description>16 major cards in three movements, from Silenus to Zapffe's last Messiah, and 56 minor cards in four suits of Zapffe's mechanisms, with the four ages of life as court cards</description>
+    <cardCount>72</cardCount>
     <structure href="decks/pessimistic/structure.xml"/>
     <metadata href="decks/pessimistic/metadata.xml"/>
     <locales>

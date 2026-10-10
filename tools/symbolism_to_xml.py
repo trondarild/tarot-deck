@@ -18,13 +18,13 @@ ROOT = Path(__file__).resolve().parent.parent
 # Deck -> symbolism files; a deck may draw on several (Zen: major and minor cards)
 SOURCES = {
     "zen": ["docs/zen-buddhism-symbolism.md", "docs/zen-buddhism-minor-symbolism.md"],
-    "pessimistic": ["docs/pessimistic-symbolism.md"],
+    "pessimistic": ["docs/pessimistic-symbolism.md", "docs/pessimistic-minor-symbolism.md"],
     "rws-tarot": ["docs/rws-tarot-symbolism.md"],
 }
 
 # Decks whose cards without a <description> get one from the first sentence of
-# their "In a reading" section (the Zen minor cards are written that way)
-DERIVE_DESCRIPTION = {"zen"}
+# their "In a reading" section (the Zen and pessimist minor cards are written that way)
+DERIVE_DESCRIPTION = {"zen", "pessimistic"}
 ROMAN = ["0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
          "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"]
 

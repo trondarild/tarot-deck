@@ -3,6 +3,7 @@
 <structure deck="pessimistic">
   <hierarchy>
     <level name="strand" label="Strand"/>
+    <level name="suit" label="Suit" optional="true"/>
   </hierarchy>
 
   <group type="strand" value="threshold" label="Before Birth" count="1">
@@ -31,5 +32,69 @@
     <card id="13" order="3"/>
     <card id="14" order="4"/>
     <card id="15" order="5"/>
+  </group>
+  <group type="suit" value="isolation" label="Isolation" count="14">
+    <card id="is01" order="1"/>
+    <card id="is02" order="2"/>
+    <card id="is03" order="3"/>
+    <card id="is04" order="4"/>
+    <card id="is05" order="5"/>
+    <card id="is06" order="6"/>
+    <card id="is07" order="7"/>
+    <card id="is08" order="8"/>
+    <card id="is09" order="9"/>
+    <card id="is10" order="10"/>
+    <card id="is11" order="11"/>
+    <card id="is12" order="12"/>
+    <card id="is13" order="13"/>
+    <card id="is14" order="14"/>
+  </group>
+  <group type="suit" value="anchoring" label="Anchoring" count="14">
+    <card id="an01" order="1"/>
+    <card id="an02" order="2"/>
+    <card id="an03" order="3"/>
+    <card id="an04" order="4"/>
+    <card id="an05" order="5"/>
+    <card id="an06" order="6"/>
+    <card id="an07" order="7"/>
+    <card id="an08" order="8"/>
+    <card id="an09" order="9"/>
+    <card id="an10" order="10"/>
+    <card id="an11" order="11"/>
+    <card id="an12" order="12"/>
+    <card id="an13" order="13"/>
+    <card id="an14" order="14"/>
+  </group>
+  <group type="suit" value="distraction" label="Distraction" count="14">
+    <card id="di01" order="1"/>
+    <card id="di02" order="2"/>
+    <card id="di03" order="3"/>
+    <card id="di04" order="4"/>
+    <card id="di05" order="5"/>
+    <card id="di06" order="6"/>
+    <card id="di07" order="7"/>
+    <card id="di08" order="8"/>
+    <card id="di09" order="9"/>
+    <card id="di10" order="10"/>
+    <card id="di11" order="11"/>
+    <card id="di12" order="12"/>
+    <card id="di13" order="13"/>
+    <card id="di14" order="14"/>
+  </group>
+  <group type="suit" value="sublimation" label="Sublimation" count="14">
+    <card id="su01" order="1"/>
+    <card id="su02" order="2"/>
+    <card id="su03" order="3"/>
+    <card id="su04" order="4"/>
+    <card id="su05" order="5"/>
+    <card id="su06" order="6"/>
+    <card id="su07" order="7"/>
+    <card id="su08" order="8"/>
+    <card id="su09" order="9"/>
+    <card id="su10" order="10"/>
+    <card id="su11" order="11"/>
+    <card id="su12" order="12"/>
+    <card id="su13" order="13"/>
+    <card id="su14" order="14"/>
   </group>
 </structure>
