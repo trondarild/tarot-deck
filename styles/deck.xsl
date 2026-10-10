@@ -117,6 +117,7 @@
                 <xsl:with-param name="deck" select="."/>
                 <xsl:with-param name="metadata" select="document(concat($baseDir, metadata/@href))/metadata"/>
                 <xsl:with-param name="locale" select="document(concat($baseDir, $localeHref))/locale"/>
+                <xsl:with-param name="localeEn" select="document(concat($baseDir, locales/locale[@lang='en']/@href))/locale"/>
             </xsl:apply-templates>
         </div>
     </xsl:template>
@@ -125,6 +126,7 @@
         <xsl:param name="deck"/>
         <xsl:param name="metadata"/>
         <xsl:param name="locale"/>
+        <xsl:param name="localeEn"/>
 
         <section id="{$deck/@id}-{@type}-{@value}" class="card-group">
             <div class="section-header">
@@ -138,6 +140,7 @@
                             <xsl:with-param name="deck" select="$deck"/>
                             <xsl:with-param name="metadata" select="$metadata"/>
                             <xsl:with-param name="locale" select="$locale"/>
+                            <xsl:with-param name="localeEn" select="$localeEn"/>
                         </xsl:apply-templates>
                     </div>
                 </xsl:when>
@@ -147,6 +150,7 @@
                             <xsl:with-param name="deck" select="$deck"/>
                             <xsl:with-param name="metadata" select="$metadata"/>
                             <xsl:with-param name="locale" select="$locale"/>
+                            <xsl:with-param name="localeEn" select="$localeEn"/>
                         </xsl:apply-templates>
                     </div>
                 </xsl:otherwise>
@@ -158,10 +162,13 @@
         <xsl:param name="deck"/>
         <xsl:param name="metadata"/>
         <xsl:param name="locale"/>
+        <xsl:param name="localeEn"/>
 
         <xsl:variable name="cid" select="@id"/>
         <xsl:variable name="meta" select="$metadata/card[@id=$cid]"/>
         <xsl:variable name="loc" select="$locale/card[@id=$cid]"/>
+        <!-- Symbolism exists only in English so far: fall back when the page locale has none -->
+        <xsl:variable name="sym" select="$loc/symbolism | $localeEn/card[@id=$cid]/symbolism[not($loc/symbolism)]"/>
         <xsl:variable name="deckType" select="$deck/@type"/>
 
         <div class="tarot-card" id="card-{$deck/@id}-{$cid}">
@@ -227,9 +234,9 @@
                 </xsl:if>
 
                 <!-- Long-form symbolism: hidden in the gallery, shown in the card modal -->
-                <xsl:if test="$loc/symbolism">
+                <xsl:if test="$sym">
                     <div class="card-symbolism" hidden="hidden">
-                        <xsl:for-each select="$loc/symbolism/section">
+                        <xsl:for-each select="$sym/section">
                             <section class="symbolism-section">
                                 <h4><xsl:value-of select="@label"/></h4>
                                 <xsl:for-each select="p">

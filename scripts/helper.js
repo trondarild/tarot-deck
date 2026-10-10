@@ -155,6 +155,7 @@ function showCardDetails(cid) {
 
   const hebrew = getVal('.hebrew');
   const symbolism = card.querySelector('.card-symbolism')?.innerHTML;
+  const description = card.querySelector('.card-description')?.innerHTML;
 
   modalBody.innerHTML = `
         <div class="modal-layout">
@@ -173,7 +174,7 @@ function showCardDetails(cid) {
                     <h2>${getVal('.card-title')}</h2>
                     <span class="sign-symbol">${getVal('.sign-symbol') || getVal('.tag-mini-suit')}</span>
                 </div>
-                <div class="full-description">${card.querySelector('.card-description')?.innerHTML || 'No description available.'}</div>
+                ${description || !symbolism ? `<div class="full-description">${description || 'No description available.'}</div>` : ''}
                 ${symbolism ? `<div class="modal-symbolism">${symbolism}</div>` : ''}
             </div>
         </div>
