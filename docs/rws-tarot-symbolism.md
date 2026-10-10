@@ -18,7 +18,7 @@ The text of the *Key* used here is the copy in `archive/PictorialKey.xml`, with 
 
 **Reversed.** Negligence, absence, distribution, carelessness, apathy, nullity, vanity.
 
-**Correspondences.** In the Golden Dawn system the Fool carries the letter aleph and the element air. The repository metadata gives these; Waite did not print them on the card.
+**Correspondences.** In the Golden Dawn system the Fool carries the letter aleph and the element air. Waite did not print them on the card.
 
 **In a reading.** The card names a beginning taken without knowledge of the ground ahead. It can describe a step made out of trust, inexperience or recklessness, and the reading usually depends on which of these the surrounding cards support.
 
@@ -66,7 +66,7 @@ The text of the *Key* used here is the copy in `archive/PictorialKey.xml`, with 
 
 **Reversed.** Light, truth, the unravelling of involved matters, public rejoicings; according to another reading, vacillation.
 
-**Correspondences.** The Golden Dawn attributes daleth and the planet Venus. The repository metadata carries a Cyrillic character for the letter here, which is an error for the Hebrew daleth.
+**Correspondences.** The Golden Dawn attributes daleth and the planet Venus.
 
 **In a reading.** The card names abundance, growth and care for what has been planted. It describes a generative phase in work, family or the body, and a source that supplies others.
 
@@ -114,7 +114,7 @@ The text of the *Key* used here is the copy in `archive/PictorialKey.xml`, with 
 
 **Reversed.** Failure, foolish designs. Another account speaks of marriage frustrated and contrarieties of all kinds.
 
-**Correspondences.** The Golden Dawn attributes zayin and the sign Gemini. The repository metadata gives the word "Gemini" in place of a symbol for the sign. Waite did not print these on the card.
+**Correspondences.** The Golden Dawn attributes zayin and the sign Gemini. Waite did not print these on the card.
 
 **In a reading.** The card names a union or a choice that engages both feeling and value. It may refer to a relationship, or to a decision in which two ways of living are weighed.
 

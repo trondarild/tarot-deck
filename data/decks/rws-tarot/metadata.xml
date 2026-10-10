@@ -15,7 +15,7 @@
   </card>
   <card id="03">
     <core><displayNumber>III</displayNumber><sortOrder>4</sortOrder></core>
-    <tarot><arcana>major</arcana><hebrew>д</hebrew><astrology><sign>♀</sign></astrology></tarot>
+    <tarot><arcana>major</arcana><hebrew>ד</hebrew><astrology><sign>♀</sign></astrology></tarot>
   </card>
   <card id="04">
     <core><displayNumber>IV</displayNumber><sortOrder>5</sortOrder></core>
@@ -27,7 +27,7 @@
   </card>
   <card id="06">
     <core><displayNumber>VI</displayNumber><sortOrder>7</sortOrder></core>
-    <tarot><arcana>major</arcana><hebrew>ז</hebrew><astrology><sign> Gemini </sign></astrology></tarot>
+    <tarot><arcana>major</arcana><hebrew>ז</hebrew><astrology><sign>♊</sign></astrology></tarot>
   </card>
   <card id="07">
     <core><displayNumber>VII</displayNumber><sortOrder>8</sortOrder></core>

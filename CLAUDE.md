@@ -70,4 +70,3 @@ Things that span files and are easy to miss:
 - `README.md` still describes the earlier single-deck layout (`tarot.xsl`, `data/structure.xml`, `data/locales/deck.*.xml`). `docs/SCHEMA.md` and the files under `data/` reflect the current layout.
 - `docs/SCHEMA.md` is the file-format specification; `docs/ROADMAP.md` lists planned XPath/XSLT/XQuery/XSD exercises.
 - `archive/PictorialKey.xml` is the original source text and is not loaded by the site.
-- Known data issue: `data/decks/rws-tarot/metadata.xml` card `03` has a Cyrillic `д` as its Hebrew letter, and card `06` has the sign text ` Gemini ` instead of a symbol.
