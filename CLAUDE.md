@@ -28,6 +28,14 @@ Placeholder card images for decks without artwork are generated from the deck da
 python3 tools/make_placeholders.py zen pessimistic   # or no arguments for all decks
 ```
 
+Code-drawn card art for the Zen and pessimistic decks lives in `tools/cardart/`: one module per group of cards, each with a `CARDS = {card_id: draw(rng)}` dict, and shared filters, palettes and frames (ensō, hanging scroll, etching plate) in `common.py`. Render with headless Chrome (run `npm install` in `tools/` once):
+
+```bash
+python3 tools/svg_cards.py zen:01,02 pessimistic   # writes assets/img/{deck}/majNN.jpg and .svg
+```
+
+Each card is seeded from its deck and id, so re-rendering is deterministic. This overwrites the placeholder for that card.
+
 `xsltproc` is also available for checking the stylesheet from the command line. Markdown is linted with `.markdownlint.yaml` (MD013 off); `.editorconfig` requires 2-space indent, LF, final newline.
 
 ## Architecture
@@ -52,6 +60,7 @@ Things that span files and are easy to miss:
 - **Metadata and locale fields are optional per card.** The stylesheet uses `xsl:if`/`xsl:choose` to tolerate missing `hebrew`, `astrology`, `description`, and falls back to the card id when a title is absent.
 - **Adding a language** needs `deck.{lang}.xml` for each deck, a `<strings lang=>` block in `ui.xml`, a new `index-{lang}.xml`, and a registry `<locale>` entry. The language switcher in `deck.xsl` and `setLanguage()` in `scripts/helper.js` hard-code `en`/`uk`, so both need editing.
 - **Every registered deck is rendered.** XSLT 1.0 in the browser cannot see URL parameters, so `deck.xsl` renders all decks in `decks.xml` except those with `status="draft"` (currently `standard-playing` and `lenormand`, which lack content) (each in `<div class="deck" data-deck=…>`, non-default ones `hidden`; default is `$defaultDeckId`). `setDeck()` in `helper.js` toggles visibility, stores the choice in `?deck=`, and resets the draw pile; shuffle draws only from the visible deck. Deck data reaches the `group` and `card` templates as parameters (`deck`, `metadata`, `locale`), not globals. Card element ids are `card-{deckId}-{cardId}`, so card ids need only be unique within a deck.
+- **Card symbolism.** The long-form text in `docs/*-symbolism.md` is copied into `<symbolism>` elements in the Zen and pessimistic locale files by `python3 tools/symbolism_to_xml.py` (rerun after editing the docs; it replaces existing elements). `deck.xsl` renders it hidden inside each card, and the modal copies it below the image.
 - **Locale fallback.** A deck without a locale for the page language falls back to its `en` locale.
 - **Zen and pessimistic decks** (`data/decks/zen`, `data/decks/pessimistic`) are major-arcana-only decks of type `tarot`; their card meanings come from `docs/*-symbolism.md`, and their artwork (`assets/img/{deck}/majNN.jpg`) is placeholders from `tools/make_placeholders.py` for now. An image that fails to load gets the `missing` class and shows the grey card background.
 - **Card detail modal and the play area** (shuffle/pull, `#play` in `deck.xsl`) are built by `scripts/helper.js` from the rendered DOM (`.tarot-card` elements under `#deck-main` and their CSS classes), so renaming a class in `deck.xsl` breaks both. Button labels for the play area come from `<play>` in `ui.xml`.
