@@ -33,7 +33,11 @@ Track B — code-drawn art:
 - [x] draw one sample suit (Zen Earth) and review it before scaling (approved with change: rank cards count the rank 1–5 in vermilion emblems on the dice-face pattern)
 - [x] Zen suits, one subagent each (`tools/cardart/zen_minor_<suit>.py`): Earth, Water, Fire, Wind, Void
 - [x] Zen rank cards: consistent figure type per rank across the five suits
-- [ ] pessimist suits, one subagent each (`tools/cardart/pess_minor_<suit>.py`): Isolation, Anchoring, Distraction, Sublimation
+- [x] pessimist Isolation suit (approved; etched style, CONTRAST setting, suit_colour() decorator — committed d7521a2, not yet pushed)
+- [ ] pessimist Anchoring suit (caput mortuum) — partly drawn: module exists, CARDS has 6 of 14, 6 rendered (.svg present): an01–an06
+- [ ] pessimist Distraction suit (bone) — partly drawn: module exists, CARDS has 10 of 14, 10 rendered (.svg present): di01–di10
+- [ ] pessimist Sublimation suit (verdigris) — partly drawn: module exists, CARDS has 14 of 14, 14 rendered (.svg present): su01–su14
+  - resume with the shared brief in `tools/cardart/PESS_MINOR_BRIEF.md` (one agent per suit; give it the suit, ids, colour and module name): each suit imports from pess_minor_isolation.py, wraps cards in @suit_colour(WASH[...]), and follows the Image/Figure paragraphs in docs/pessimistic-minor-symbolism.md; review contact sheets per suit
 - [ ] pessimist court cards: the same figure at four ages (Child, Youth, Adult, Elder) across the suits
 - [ ] review contact sheets per suit (emblems, frames, colour, figure types) and fix
 - [ ] commit and push suit by suit
