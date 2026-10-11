@@ -31,8 +31,8 @@ Track A — prompts:
 Track B — code-drawn art:
 - [x] add shared minor-card helpers to `tools/cardart/common.py`: suit emblems, emblem layouts for 1–10, vignette area
 - [x] draw one sample suit (Zen Earth) and review it before scaling (approved with change: rank cards count the rank 1–5 in vermilion emblems on the dice-face pattern)
-- [ ] Zen suits, one subagent each (`tools/cardart/zen_minor_<suit>.py`): Earth, Water, Fire, Wind, Void
-- [ ] Zen rank cards: consistent figure type per rank across the five suits
+- [x] Zen suits, one subagent each (`tools/cardart/zen_minor_<suit>.py`): Earth, Water, Fire, Wind, Void
+- [x] Zen rank cards: consistent figure type per rank across the five suits
 - [ ] pessimist suits, one subagent each (`tools/cardart/pess_minor_<suit>.py`): Isolation, Anchoring, Distraction, Sublimation
 - [ ] pessimist court cards: the same figure at four ages (Child, Youth, Adult, Elder) across the suits
 - [ ] review contact sheets per suit (emblems, frames, colour, figure types) and fix
