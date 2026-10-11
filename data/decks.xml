@@ -2,8 +2,8 @@
 <!DOCTYPE decks SYSTEM "schemas/decks.dtd">
 <decks>
   <deck id="rws-tarot" type="tarot" version="1.0">
-    <name>Rider-Waite-Smith Tarot</name>
-    <description>Classic tarot deck by A.E. Waite and Pamela Colman Smith</description>
+    <name>Waite-Smith Deck</name>
+    <description>Tarot deck by A.E. Waite and Pamela Colman Smith</description>
     <created>1909</created>
     <cardCount>78</cardCount>
     <structure href="decks/rws-tarot/structure.xml"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui>
     <strings lang="en">
-        <title>Tarot Pictorial Key</title>
+        <title>Tarot</title>
         <nav>
             <major>Major Arcana</major>
             <minor>Minor Arcana</minor>
