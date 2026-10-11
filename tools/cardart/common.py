@@ -279,9 +279,17 @@ def pess_pip_close():
     return plate_close()
 
 
-def pess_court_open(suit):
-    """Plate mark and light aquatint, with the suit emblem in the upper left corner of the image."""
-    return plate_open() + aquatint(opacity=0.35) + _emblem_pess(suit, IMAGE_BOX[0] + 50, IMAGE_BOX[1] + 55, 1.2)
+PESS_AGES = {1: "Child", 2: "Youth", 3: "Adult", 4: "Elder"}
+
+
+def pess_court_open(suit, age):
+    """Plate mark and light aquatint, with the court card's age (1 Child … 4 Elder) counted in suit
+    emblems in a short row at the top of the image, as the Zen rank cards count their rank."""
+    x0, y0, x1, _ = IMAGE_BOX
+    step = 62
+    cx = (x0 + x1) / 2
+    xs = [cx + (k - (age - 1) / 2) * step for k in range(age)]
+    return plate_open() + aquatint(opacity=0.35) + "".join(_emblem_pess(suit, x, y0 + 60, 1.1) for x in xs)
 
 
 def pess_court_close():
